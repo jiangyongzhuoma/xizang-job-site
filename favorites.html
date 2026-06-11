@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>我的收藏 - 西藏公考通</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.json"></head>
+<body>
+<header class="header"><div class="header-inner">
+<a href="index.html" class="logo"><i class="fas fa-mountain"></i> 西藏公考通 <span>收藏</span></a>
+<nav class="nav">
+<a href="index.html"><i class="fas fa-home"></i> 首页</a>
+<a href="search.html"><i class="fas fa-search"></i> 岗位查询</a>
+<a href="favorites.html" class="active"><i class="fas fa-star"></i> 收藏</a>
+<a href="track.html"><i class="fas fa-tasks"></i> 进度</a>
+<a href="major.html"><i class="fas fa-graduation-cap"></i> 专业</a>
+<a href="#" id="themeToggle2" onclick="toggleTheme();return false;" style="font-size:16px;">🌙</a>
+</nav></div></header>
+<main class="container">
+<div class="card"><div class="card-header"><i class="fas fa-star"></i> 我的收藏 <span style="font-size:13px;color:var(--text-light);margin-left:8px;" id="favCount"></span></div>
+<div class="card-body" id="favList">加载中...</div></div>
+</main>
+<footer class="footer"><p>数据存储在浏览器本地</p></footer>
+<script src="js/data.js"></script><script src="js/favorites.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  renderFavList();
+  document.getElementById('favCount').textContent = '(' + getFavorites().length + '个)';
+  updateThemeIcon2();
+});
+function toggleTheme() {
+  const d = document.documentElement;
+  const isDark = d.getAttribute('data-theme') === 'dark';
+  d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  updateThemeIcon2();
+}
+function updateThemeIcon2() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  document.getElementById('themeToggle2').textContent = isDark ? '☀️' : '🌙';
+}
+</script>
+<script src="js/qa.js"></script>
+</body>
+</html>

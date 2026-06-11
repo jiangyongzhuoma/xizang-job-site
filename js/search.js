@@ -106,6 +106,7 @@ function renderResults() {
     const typeBadge = getTypeBadge(p.type);
     html += `<tr class="fade-in">
       <td><input type="checkbox" class="compare-cb" value="${p.id}" onchange="updateCompareCount()"></td>
+      <td><button class="fav-btn ${isFavorite(p.id)?'active':''}" data-id="${p.id}" onclick="toggleFavorite('${p.id}');return false;" title="${isFavorite(p.id)?'取消收藏':'收藏'}">${isFavorite(p.id)?'★':'☆'}</button></td>
       <td><span class="badge badge-blue">${p.year}</span></td>
       <td><span class="${typeBadge}">${p.type}</span></td>
       <td><strong>${p.department || '-'}</strong></td>

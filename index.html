@@ -6,6 +6,8 @@
   <title>西藏公考通 - 西藏公务员事业编岗位查询</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1a6b8a">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
@@ -19,8 +21,10 @@
       <nav class="nav">
         <a href="index.html" class="active"><i class="fas fa-home"></i> 首页</a>
         <a href="search.html"><i class="fas fa-search"></i> 岗位查询</a>
-        <a href="score.html"><i class="fas fa-chart-line"></i> 分数线</a>
-        <a href="material.html"><i class="fas fa-book"></i> 备考</a>
+        <a href="favorites.html"><i class="fas fa-star"></i> 收藏</a>
+        <a href="track.html"><i class="fas fa-tasks"></i> 进度</a>
+        <a href="major.html"><i class="fas fa-graduation-cap"></i> 专业</a>
+        <button id="themeToggle" class="theme-toggle" onclick="toggleTheme()" title="夜间模式">🌙</button>
       </nav>
     </div>
   </header>
@@ -57,6 +61,12 @@
         <div class="card-body" id="dailyUpdates">
           <div style="text-align:center;padding:16px;color:var(--text-light);font-size:13px;"><i class="fas fa-spinner fa-spin"></i> 加载中...</div>
         </div>
+      </div>
+
+      <!-- Countdown -->
+      <div class="card">
+        <div class="card-header"><i class="fas fa-clock"></i> 考试倒计时</div>
+        <div class="card-body"><div class="countdown-grid" id="countdownGrid"></div></div>
       </div>
 
       <!-- Quick Search -->
@@ -169,7 +179,10 @@
       loadNews();
       loadFeatures();
       loadDailyUpdates();
+      loadCountdown();
       initChart();
+      initTheme();
+      registerSW();
     });
 
     function loadStats() {
@@ -219,6 +232,48 @@
     function webSearch() {
       const q = document.getElementById('webQuery').value.trim() || '西藏公务员 招考 公告';
       searchWeb(q, 'webResults');
+    }
+
+    function loadCountdown() {
+      const grid = document.getElementById('countdownGrid');
+      const now = new Date();
+      const exams = EXAM_SCHEDULE.filter(s => s.event.includes('笔试'));
+      const sorted = exams.sort((a,b) => {
+        const year = parseInt(a.year) || 2026;
+        return new Date(year, a.month-1, 1) - new Date(parseInt(b.year)||2026, b.month-1, 1);
+      });
+      let count = 0;
+      sorted.forEach(s => {
+        const year = parseInt(s.year) || 2026;
+        const examDate = new Date(year, s.month-1, 15);
+        const days = Math.ceil((examDate - now) / (1000*60*60*24));
+        if(days > 0 && count < 4) {
+          count++;
+          grid.innerHTML += `<div class="countdown-card"><div class="countdown-num">${days}</div><div class="countdown-label">距离${s.exam.replace('（笔试）','')}还有${days}天</div></div>`;
+        }
+      });
+    }
+
+    function toggleTheme() {
+      const d = document.documentElement;
+      const isDark = d.getAttribute('data-theme') === 'dark';
+      d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
+      document.getElementById('themeToggle').textContent = isDark ? '🌙' : '☀️';
+    }
+
+    function initTheme() {
+      const saved = localStorage.getItem('theme');
+      if(saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.getElementById('themeToggle').textContent = '☀️';
+      }
+    }
+
+    function registerSW() {
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      }
     }
   </script>
 <script src="js/qa.js"></script>

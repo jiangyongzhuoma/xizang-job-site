@@ -328,6 +328,36 @@ input[type="range"] { width: 100%; }
 /* Checkbox column */
 td input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; }
 
+/* Night mode */
+[data-theme="dark"] { --primary: #2196b0; --primary-dark: #1a6b8a; --bg: #1a1a2e; --card-bg: #16213e; --text: #e0e0e0; --text-light: #a0a0b0; --border: #2a2a4a; }
+[data-theme="dark"] table th { background: #1a1a2e; }
+[data-theme="dark"] table tr:hover td { background: #1a1a3e; }
+[data-theme="dark"] .web-search-result { background: #16213e; }
+[data-theme="dark"] input, [data-theme="dark"] select { background: #16213e; color: #e0e0e0; border-color: #2a2a4a; }
+.theme-toggle { cursor: pointer; padding: 6px 10px; border-radius: 6px; background: rgba(255,255,255,0.1); color: #fff; border: none; font-size: 16px; }
+
+/* Favorite star */
+.fav-btn { cursor: pointer; border: none; background: none; font-size: 16px; color: var(--text-light); transition: color 0.2s; padding: 2px 4px; }
+.fav-btn:hover { color: #f39c12; transform: scale(1.2); }
+.fav-btn.active { color: #f39c12; }
+
+/* Countdown */
+.countdown-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.countdown-card { text-align: center; padding: 16px; border-radius: 8px; border: 1px solid var(--border); }
+.countdown-num { font-size: 36px; font-weight: 700; color: var(--primary); }
+.countdown-label { font-size: 12px; color: var(--text-light); margin-top: 4px; }
+
+/* Track page */
+.track-item { padding: 12px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
+.track-stage { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+.track-add-form { display: grid; grid-template-columns: 1fr 1fr auto; gap: 8px; margin-bottom: 16px; }
+.track-add-form input, .track-add-form select { padding: 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; }
+
+/* Major page */
+.major-result { padding: 12px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; }
+.major-result .mr-title { font-weight: 600; font-size: 14px; }
+.major-result .mr-detail { font-size: 13px; color: var(--text-light); margin-top: 4px; }
+
 /* Mobile responsive for chat */
 @media (max-width: 480px) {
   #qa-dlg { width: calc(100vw - 32px) !important; right: 16px !important; bottom: 80px !important; height: 400px !important; }

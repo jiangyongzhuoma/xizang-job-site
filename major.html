@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>专业目录 - 西藏公考通</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.json"></head>
+<body>
+<header class="header"><div class="header-inner">
+<a href="index.html" class="logo"><i class="fas fa-mountain"></i> 西藏公考通 <span>专业目录</span></a>
+<nav class="nav">
+<a href="index.html"><i class="fas fa-home"></i> 首页</a><a href="search.html"><i class="fas fa-search"></i> 岗位查询</a>
+<a href="favorites.html"><i class="fas fa-star"></i> 收藏</a><a href="track.html"><i class="fas fa-tasks"></i> 进度</a>
+<a href="major.html" class="active"><i class="fas fa-graduation-cap"></i> 专业</a>
+<a href="#" id="themeToggle2" onclick="toggleTheme();return false;" style="font-size:16px;">🌙</a>
+</nav></div></header>
+<main class="container">
+<div class="card"><div class="card-header"><i class="fas fa-search"></i> 查询专业可报岗位</div>
+<div class="card-body">
+<div style="display:flex;gap:8px;">
+<input type="text" id="majorInput" placeholder="输入专业名称（如：汉语言文学、计算机、会计）" style="flex:1;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;" onkeydown="if(event.key==='Enter')searchMajor()">
+<button onclick="searchMajor()" class="btn btn-primary"><i class="fas fa-search"></i> 查询</button>
+</div>
+</div></div>
+<div id="majorResults"></div>
+<div class="card"><div class="card-header"><i class="fas fa-list"></i> 常见专业报考方向</div>
+<div class="card-body" id="majorCommon"></div></div>
+</main>
+<footer class="footer"><p>仅供参考，以实际职位表要求为准</p></footer>
+<script src="js/data.js"></script>
+<script>
+const MAJOR_MAP = {
+  '汉语言文学': { type:'公务员', depts:'宣传部、政府办、教育厅、文化部门', edu:'本科及以上', note:'文秘岗、教师岗均可报' },
+  '汉语言文学': { type:'事业编（教育）', depts:'中小学语文教师', edu:'本科及以上', note:'需教资证' },
+  '汉语言': { type:'公务员', depts:'宣传部、政府办、教育厅', edu:'本科及以上' },
+  '中国语言文学': { type:'公务员', depts:'区直机关、地市机关', edu:'硕士及以上' },
+  '计算机': { type:'公务员', depts:'公安厅、信息中心、大数据局', edu:'本科及以上', note:'需求量大' },
+  '计算机科学与技术': { type:'事业编', depts:'信息中心、医院信息科', edu:'本科及以上' },
+  '会计': { type:'公务员', depts:'财政厅、审计厅、各单位财务', edu:'本科及以上' },
+  '会计学': { type:'事业编', depts:'各单位财务岗', edu:'本科及以上' },
+  '财务管理': { type:'公务员', depts:'财政、审计', edu:'本科及以上' },
+  '法学': { type:'公务员', depts:'纪委监委、法院、检察院、司法厅', edu:'本科及以上', note:'岗位多竞争大' },
+  '法律': { type:'事业编', depts:'法律援助中心', edu:'本科及以上' },
+  '经济学': { type:'公务员', depts:'发改委、财政厅、商务厅', edu:'本科及以上' },
+  '金融': { type:'公务员', depts:'金融监管局、人民银行', edu:'硕士及以上' },
+  '统计学': { type:'公务员', depts:'统计局、各部门统计岗', edu:'本科及以上' },
+  '数学': { type:'事业编（教育）', depts:'中小学数学教师', edu:'本科及以上', note:'需教资证' },
+  '英语': { type:'事业编（教育）', depts:'中小学英语教师', edu:'本科及以上', note:'需教资证' },
+  '物理': { type:'事业编（教育）', depts:'中学物理教师', edu:'本科及以上' },
+  '化学': { type:'事业编（教育）', depts:'中学化学教师', edu:'本科及以上' },
+  '生物': { type:'事业编（教育）', depts:'中学生物教师', edu:'本科及以上' },
+  '政治': { type:'事业编（教育）', depts:'中学政治教师', edu:'本科及以上' },
+  '历史': { type:'事业编（教育）', depts:'中学历史教师', edu:'本科及以上' },
+  '地理': { type:'事业编（教育）', depts:'中学地理教师', edu:'本科及以上' },
+  '体育': { type:'事业编（教育）', depts:'中小学体育教师', edu:'本科及以上' },
+  '音乐': { type:'事业编（教育）', depts:'中小学音乐教师', edu:'本科及以上' },
+  '美术': { type:'事业编（教育）', depts:'中小学美术教师', edu:'本科及以上' },
+  '教育': { type:'事业编（教育）', depts:'各级学校、教育厅', edu:'本科及以上' },
+  '心理学': { type:'事业编', depts:'学校心理教师', edu:'本科及以上' },
+  '土木工程': { type:'事业编（综合）', depts:'交通厅、住建局、公路局', edu:'本科及以上' },
+  '水利': { type:'事业编（综合）', depts:'水利厅', edu:'本科及以上' },
+  '农学': { type:'事业编（综合）', depts:'农业农村厅、农科院', edu:'硕士及以上' },
+  '林学': { type:'事业编（综合）', depts:'林草局', edu:'本科及以上' },
+  '畜牧': { type:'事业编（综合）', depts:'农业农村厅', edu:'本科及以上' },
+  '医学': { type:'事业编（综合）', depts:'卫健委、各级医院', edu:'本科及以上' },
+  '护理': { type:'事业编（综合）', depts:'各级医院', edu:'本科及以上' },
+  '药学': { type:'事业编（综合）', depts:'药监局、医院', edu:'本科及以上' },
+  '不限': { type:'公务员/事业编', depts:'大量乡镇岗位、部分区直岗位', edu:'本科及以上', note:'竞争较大' },
+};
+
+function searchMajor() {
+  const input = document.getElementById('majorInput').value.trim();
+  const container = document.getElementById('majorResults');
+  if(!input) { container.innerHTML = ''; return; }
+
+  // Find matching majors
+  const matched = Object.entries(MAJOR_MAP).filter(([k]) => k.includes(input) || input.includes(k));
+  if(matched.length === 0) {
+    container.innerHTML = `<div class="card"><div class="card-body" style="text-align:center;padding:20px;color:var(--text-light);">未找到"${input}"的匹配信息，可尝试相近关键词</div></div>`;
+    return;
+  }
+  let html = '<div class="card"><div class="card-header"><i class="fas fa-check-circle"></i> 查询结果</div><div class="card-body">';
+  matched.forEach(([major, info]) => {
+    html += `<div class="major-result fade-in">
+      <div class="mr-title">${major}</div>
+      <div class="mr-detail">推荐报考：${info.type} · ${info.depts}<br>学历要求：${info.edu}${info.note ? ' · '+info.note : ''}</div>
+    </div>`;
+  });
+  html += '</div></div>';
+  container.innerHTML = html;
+}
+
+// Show common majors on load
+function showCommon() {
+  const common = ['汉语言文学','计算机','会计','法学','经济学','土木工程','医学','不限'];
+  const container = document.getElementById('majorCommon');
+  let html = '<div style="display:flex;flex-wrap:wrap;gap:8px;">';
+  common.forEach(m => {
+    html += `<button onclick="document.getElementById('majorInput').value='${m}';searchMajor();" style="padding:6px 14px;border:1px solid var(--border);border-radius:20px;background:#fff;cursor:pointer;font-size:13px;">${m}</button>`;
+  });
+  html += '</div>';
+  container.innerHTML = html;
+}
+document.addEventListener('DOMContentLoaded', function(){ showCommon(); updateThemeIcon2(); });
+function toggleTheme() {
+  const d = document.documentElement; const isDark = d.getAttribute('data-theme') === 'dark';
+  d.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  updateThemeIcon2();
+}
+function updateThemeIcon2() {
+  const el = document.getElementById('themeToggle2');
+  if(el) el.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+}
+</script>
+<script src="js/qa.js"></script>
+</body>
+</html>
