@@ -36,7 +36,15 @@
   </div>
 
   <div class="card">
-    <div class="card-header"><i class="fas fa-chart-bar"></i> 年度招录人数趋势</div>
+    <div class="card-header"><i class="fas fa-info-circle"></i> 分数线说明</div>
+    <div class="card-body" style="font-size:13px;color:var(--text-light);">
+      <p>笔试最低控制线是进入面试的最低分数要求，不代表岗位实际录取分数。实际进面分数因岗位竞争程度而异，热门岗位进面分通常远高于控制线。</p>
+      <p>数据来源：西藏自治区人力资源和社会保障厅官方公告</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><i class="fas fa-chart-bar"></i> 近年公务员招录规模</div>
     <div class="card-body"><div style="height:280px;"><canvas id="scoreChart"></canvas></div></div>
   </div>
 </main>
@@ -56,14 +64,18 @@ function filterScores(){
 }
 
 function initScoreChart(){
-  const data = SCORE_DATA.filter(d => d.name==="招录总数");
+  const data = [
+    {year:2021, count:286}, {year:2022, count:304},
+    {year:2023, count:297}, {year:2024, count:303},
+    {year:2025, count:385}, {year:2026, count:475}
+  ];
   new Chart(document.getElementById('scoreChart'), {
     type: 'bar',
     data: {
       labels: data.map(d=>d.year),
       datasets: [{
         label: '公务员招录人数',
-        data: data.map(d=>d.score),
+        data: data.map(d=>d.count),
         backgroundColor: 'rgba(26,107,138,0.7)',
         borderRadius: 4
       }]
