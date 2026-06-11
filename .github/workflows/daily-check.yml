@@ -39,10 +39,11 @@ jobs:
           with open('/tmp/announcements.html', 'r', encoding='utf-8') as f:
               html = f.read()
 
-          # Extract announcement items
-          # Pattern: href="./202604/t20260423_536510.html" followed by date
+          # Extract using the known HTML structure:
+          # <a class="nm" href="./202606/t20260609_544645.html">标题</a>
+          # <div class="date">2026-06-09</div>
           items = re.findall(
-              r'<a[^>]*href="(\./\d+/t\d+_\d+\.html)"[^>]*>(.*?)</a>\s*(\d{4}-\d{2}-\d{2})',
+              r'<a\s+class="nm"\s+href="(\./\d+/t\d+_\d+\.html)"[^>]*>(.*?)</a>\s*<div\s+class="date">\s*(\d{4}-\d{2}-\d{2})',
               html
           )
 
@@ -59,8 +60,9 @@ jobs:
 
               # Check if related to exams/jobs
               keywords = ['公务员', '事业', '招聘', '考录', '遴选', '三支一扶', '教师', '教资', '国考',
-                         '人才引进', '就业', '岗位', '招录', '报名', '考试', '笔试', '面试']
-              if any(kw in title for kw in keywords):
+                         '人才引进', '就业', '岗位', '招录', '报名', '考试', '笔试', '面试',
+                         '高校毕业生', '录用', '公示', '选调', '事业单位', '西藏']
+              if any(kw in title for kw in keywords) and '公示' not in title:
                   results.append({
                       'title': title,
                       'url': full_url,
