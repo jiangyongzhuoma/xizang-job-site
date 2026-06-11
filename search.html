@@ -18,7 +18,9 @@
       <nav class="nav">
         <a href="index.html"><i class="fas fa-home"></i> 首页</a>
         <a href="search.html" class="active"><i class="fas fa-search"></i> 岗位查询</a>
-      </nav>
+        <a href="score.html"><i class="fas fa-chart-line"></i> 分数线</a>
+        <a href="material.html"><i class="fas fa-book"></i> 备考</a>
+        <a href="schedule.html"><i class="fas fa-clock"></i> 考试时间</a>
     </div>
   </header>
 
@@ -83,9 +85,17 @@
           <div class="form-group">
             <label>竞争比范围</label>
             <div style="display:flex;gap:6px;align-items:center;">
-              <input type="number" id="sRatioMin" placeholder="最小" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:4px;font-size:13px;" min="0">
+              <input type="number" id="sRatioMin" placeholder="最小" style="width:65px;padding:8px;border:1px solid var(--border);border-radius:4px;font-size:13px;" min="0">
               <span style="color:var(--text-light);">~</span>
-              <input type="number" id="sRatioMax" placeholder="最大" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:4px;font-size:13px;" min="0">
+              <input type="number" id="sRatioMax" placeholder="最大" style="width:65px;padding:8px;border:1px solid var(--border);border-radius:4px;font-size:13px;" min="0">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>报名人数范围</label>
+            <div style="display:flex;gap:6px;align-items:center;">
+              <input type="number" id="sAppMin" placeholder="最少" style="width:65px;padding:8px;border:1px solid var(--border);border-radius:4px;font-size:13px;" min="0">
+              <span style="color:var(--text-light);">~</span>
+              <input type="number" id="sAppMax" placeholder="最多" style="width:65px;padding:8px;border:1px solid var(--border);border-radius:4px;font-size:13px;" min="0">
             </div>
           </div>
           <div class="form-group">
@@ -124,7 +134,8 @@
                 <th onclick="sortBy('type')">类型 <i class="fas fa-sort"></i></th>
                 <th onclick="sortBy('department')">招考部门 <i class="fas fa-sort"></i></th>
                 <th onclick="sortBy('position')">职位名称 <i class="fas fa-sort"></i></th>
-                <th>学历要求</th>
+                <th>学历</th>
+                <th>专业要求</th>
                 <th onclick="sortBy('recruits')">招录 <i class="fas fa-sort"></i></th>
                 <th onclick="sortBy('applicants')">报名 <i class="fas fa-sort"></i></th>
                 <th onclick="sortBy('ratio')">竞争比 <i class="fas fa-sort"></i></th>

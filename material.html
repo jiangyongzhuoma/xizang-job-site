@@ -12,55 +12,87 @@
 <a href="search.html"><i class="fas fa-search"></i> 岗位查询</a>
 <a href="score.html"><i class="fas fa-chart-line"></i> 分数线</a>
 <a href="material.html" class="active"><i class="fas fa-book"></i> 备考</a>
+<a href="schedule.html"><i class="fas fa-clock"></i> 考试时间</a>
 </nav></div></header>
 
 <main class="container">
   <div class="card">
-    <div class="card-header"><i class="fas fa-filter"></i> 筛选资料</div>
+    <div class="card-header"><i class="fas fa-filter"></i> 筛选备考资料</div>
     <div class="card-body">
       <div class="search-form">
-        <div class="form-group"><label>分类</label><select id="matCat"><option value="">全部</option><option value="考试大纲">考试大纲</option><option value="备考攻略">备考攻略</option><option value="真题资料">真题资料</option><option value="考试时间">考试时间</option><option value="官方渠道">官方渠道</option></select></div>
-        <button onclick="filterMaterials()" class="btn btn-primary"><i class="fas fa-search"></i> 筛选</button>
+        <div class="form-group"><label>分类</label><select id="matCat" onchange="filterMaterials()">
+          <option value="all">全部</option>
+          <option value="公务员行测">公务员行测</option>
+          <option value="公务员申论">公务员申论</option>
+          <option value="事业编D类（教师）">事业编D类（教师）</option>
+          <option value="教师资格证">教师资格证</option>
+          <option value="加分政策">加分政策</option>
+        </select></div>
+        <div class="form-group"><label>搜索</label><input type="text" id="matSearch" placeholder="关键字搜索..." oninput="filterMaterials()" style="padding:8px;border:1px solid var(--border);border-radius:4px;font-size:13px;"></div>
       </div>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-header"><i class="fas fa-book"></i> 备考资料大全</div>
-    <div class="card-body"><div class="mat-grid" id="matGrid"></div></div>
-  </div>
+  <div id="materialsContainer"></div>
 
   <div class="card">
-    <div class="card-header"><i class="fas fa-clock"></i> 考试时间参考</div>
+    <div class="card-header"><i class="fas fa-lightbulb"></i> 备考建议（针对汉语言文学专业）</div>
     <div class="card-body">
       <div class="mat-grid">
-        <div class="mat-card"><span class="mat-cat">全年安排</span><div style="font-size:13px;color:var(--text);"><strong>西藏公考全年时间参考</strong></div><div class="mat-meta">1-2月：公务员报名考试<br>5-6月：事业单位报名考试<br>8月：三支一扶招募<br>10-11月：国考报名<br>全年：人才引进（不定期）</div></div>
-        <div class="mat-card"><span class="mat-cat">学历要求</span><div style="font-size:13px;color:var(--text);"><strong>各考试类型学历要求</strong></div><div class="mat-meta">公务员：本科及以上为主<br>事业编（教育）：本科为主，硕博优先<br>三支一扶：专科及以上<br>人才引进：硕士及以上</div></div>
-        <div class="mat-card"><span class="mat-cat">考试科目</span><div style="font-size:13px;color:var(--text);"><strong>笔试科目一览</strong></div><div class="mat-meta">公务员：行测+申论(各150分)<br>事业编D类：职测+综合应用(各150分)<br>事业编A/B/C/E类：职测+综合应用<br>面试：结构化/试讲</div></div>
-        <div class="mat-card"><span class="mat-cat">备考建议</span><div style="font-size:13px;color:var(--text);"><strong>汉语言文学专业备考建议</strong></div><div class="mat-meta">1. 科目一综合素质：刷真题+练作文<br>2. 科目二教育知识：重点背诵，最易挂科<br>3. 科目三学科语文：本专业优势，主攻教案<br>4. 总备考时间建议：2-3个月，每天2-3h</div></div>
+        <div class="mat-card" style="border-left:4px solid var(--primary);">
+          <div style="font-weight:600;margin-bottom:6px;">📚 科目一：综合素质</div>
+          <div class="mat-meta">难度中等，靠刷真题+练作文可过。选择题占39%，材料分析+写作占61%。建议分配时间：30%</div>
+        </div>
+        <div class="mat-card" style="border-left:4px solid var(--accent);">
+          <div style="font-weight:600;margin-bottom:6px;">📖 科目二：教育知识与能力</div>
+          <div class="mat-meta">难度最大！教育学原理+心理学需大量背诵。这是最多人挂科的科目。建议分配时间：40%</div>
+        </div>
+        <div class="mat-card" style="border-left:4px solid #27ae60;">
+          <div style="font-weight:600;margin-bottom:6px;">✏️ 科目三：学科语文</div>
+          <div class="mat-meta">汉语言文学本科有专业优势！主攻教学设计和案例分析即可。建议分配时间：30%</div>
+        </div>
+        <div class="mat-card" style="border-left:4px solid #8e44ad;">
+          <div style="font-weight:600;margin-bottom:6px;">⏰ 备考时间建议</div>
+          <div class="mat-meta">每天2-3小时，2个月可过笔试。第一阶段（3周）基础夯实，第二阶段（2周）刷题，第三阶段（1周）冲刺背诵</div>
+        </div>
       </div>
     </div>
   </div>
 </main>
 
-<footer class="footer"><p>数据来源：西藏自治区人社厅 等官方渠道 | 仅供参考</p></footer>
+<footer class="footer"><p>数据来源：西藏自治区人社厅、中小学教师资格考试网等</p></footer>
 <script src="js/data.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function(){ filterMaterials(); });
-
 function filterMaterials(){
   const cat = document.getElementById('matCat').value;
-  const items = cat ? EXAM_MATERIALS.filter(m => m.cat === cat) : EXAM_MATERIALS;
+  const keyword = document.getElementById('matSearch').value.trim().toLowerCase();
+  let items = EXAM_MATERIALS;
+  if(cat !== 'all') items = items.filter(m => m.cat === cat);
+  if(keyword) items = items.filter(m => (m.title+m.detail).toLowerCase().includes(keyword));
+
   const groups = {};
-  items.forEach(m => { if(!groups[m.cat]) groups[m.cat] = []; groups[m.cat].push(m); });
-  const grid = document.getElementById('matGrid');
-  grid.innerHTML = '';
-  Object.keys(groups).forEach(cat => {
-    groups[cat].forEach(m => {
-      grid.innerHTML += `<div class="mat-card fade-in"><span class="mat-cat">${m.cat}</span><a href="${m.url}" target="_blank"><i class="fas fa-external-link-alt"></i> ${m.title}</a><div class="mat-meta">${m.note||''}</div></div>`;
-    });
+  items.forEach(m => {
+    if(!groups[m.cat]) groups[m.cat] = [];
+    groups[m.cat].push(m);
   });
+
+  const container = document.getElementById('materialsContainer');
+  container.innerHTML = '';
+  Object.keys(groups).forEach(cat => {
+    let html = `<div class="card"><div class="card-header"><i class="fas fa-folder"></i> ${cat} <span style="font-size:13px;color:var(--text-light);margin-left:8px;">${groups[cat].length}条</span></div><div class="card-body"><div class="mat-grid">`;
+    groups[cat].forEach(m => {
+      html += `<div class="mat-card fade-in">
+        <div style="font-weight:600;font-size:14px;margin-bottom:4px;">${m.title}</div>
+        <div class="mat-meta">${m.detail || ''}</div>
+      </div>`;
+    });
+    html += `</div></div></div>`;
+    container.innerHTML += html;
+  });
+
+  if(container.innerHTML === '') container.innerHTML = '<div class="card"><div class="card-body" style="text-align:center;padding:40px;color:var(--text-light);">无匹配资料</div></div>';
 }
+document.addEventListener('DOMContentLoaded', filterMaterials);
 </script>
 </body>
 </html>

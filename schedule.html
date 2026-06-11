@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>考试时间 - 西藏公考通</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header"><div class="header-inner">
+<a href="index.html" class="logo"><i class="fas fa-mountain"></i> 西藏公考通 <span>考试时间</span></a>
+<nav class="nav">
+<a href="index.html"><i class="fas fa-home"></i> 首页</a>
+<a href="search.html"><i class="fas fa-search"></i> 岗位查询</a>
+<a href="score.html"><i class="fas fa-chart-line"></i> 分数线</a>
+<a href="material.html"><i class="fas fa-book"></i> 备考</a>
+<a href="schedule.html" class="active"><i class="fas fa-clock"></i> 考试时间</a>
+</nav></div></header>
+
+<main class="container">
+  <div class="card">
+    <div class="card-header"><i class="fas fa-calendar-alt"></i> 考试时间查询</div>
+    <div class="card-body">
+      <div class="search-form">
+        <div class="form-group"><label>按月份筛选</label><select id="schMonth" onchange="filterSchedule()">
+          <option value="0">全年</option>
+          <option value="1">1月</option><option value="2">2月</option><option value="3">3月</option>
+          <option value="4">4月</option><option value="5">5月</option><option value="6">6月</option>
+          <option value="7">7月</option><option value="8">8月</option><option value="9">9月</option>
+          <option value="10">10月</option><option value="11">11月</option><option value="12">12月</option>
+        </select></div>
+        <div class="form-group"><label>考试类型</label><select id="schExam" onchange="filterSchedule()">
+          <option value="all">全部</option>
+          <option value="公务员">公务员</option>
+          <option value="事业编">事业编</option>
+          <option value="教资">教资</option>
+          <option value="三支一扶">三支一扶</option>
+        </select></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <div id="timelineContainer"></div>
+
+  <div class="card">
+    <div class="card-header"><i class="fas fa-info-circle"></i> 重要提示</div>
+    <div class="card-body" style="font-size:13px;color:var(--text-light);">
+      <p>⚠️ 以上时间安排基于历年规律整理，仅供参考。具体时间以西藏自治区人力资源和社会保障厅官方公告为准。</p>
+      <p>💡 建议收藏 <a href="https://hrss.xizang.gov.cn" target="_blank">hrss.xizang.gov.cn</a> 并定期查看"通知公告"栏目。</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer"><p>数据来源：西藏自治区人社厅公告 | 仅供参考</p></footer>
+<script src="js/data.js"></script>
+<script>
+function filterSchedule() {
+  const month = parseInt(document.getElementById('schMonth').value);
+  const examType = document.getElementById('schExam').value;
+  let items = EXAM_SCHEDULE;
+  if(month > 0) items = items.filter(s => s.month === month);
+  if(examType !== 'all') items = items.filter(s => s.exam.includes(examType));
+
+  const months = Array.from({length:12}, (_,i) => i+1);
+  const container = document.getElementById('timelineContainer');
+  container.innerHTML = '';
+
+  if(month > 0) {
+    renderMonth(month, items);
+  } else {
+    months.forEach(m => {
+      const monthItems = items.filter(s => s.month === m);
+      if(monthItems.length > 0) renderMonth(m, monthItems);
+    });
+  }
+
+  if(container.innerHTML === '') {
+    container.innerHTML = '<div class="card"><div class="card-body" style="text-align:center;padding:40px;color:var(--text-light);">该月份暂无考试安排</div></div>';
+  }
+}
+
+function renderMonth(month, items) {
+  const container = document.getElementById('timelineContainer');
+  const monthNames = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+  let html = `<div class="card"><div class="card-header" style="background:#f7f9fb;"><i class="fas fa-calendar-day"></i> ${monthNames[month-1]}</div><div class="card-body">`;
+
+  items.forEach(s => {
+    html += `<div class="web-search-result fade-in" style="border-left:4px solid ${getExamColor(s.exam)};">
+      <div style="display:flex;justify-content:space-between;align-items:start;">
+        <div>
+          <div style="font-weight:600;font-size:14px;">${s.exam}</div>
+          <div style="font-size:13px;color:var(--text);margin:4px 0;">${s.event}</div>
+          <div style="font-size:12px;color:var(--text-light);">${s.desc || ''}</div>
+        </div>
+        <span class="badge ${getExamBadge(s.exam)}">${s.year}</span>
+      </div>
+    </div>`;
+  });
+
+  html += `</div></div>`;
+  container.innerHTML += html;
+}
+
+function getExamColor(exam) {
+  if(exam.includes('公务员')) return '#e74c3c';
+  if(exam.includes('事业')) return '#2196b0';
+  if(exam.includes('教师')) return '#4caf50';
+  if(exam.includes('教资')) return '#9c27b0';
+  if(exam.includes('三支')) return '#ff9800';
+  if(exam.includes('人才')) return '#e91e63';
+  return '#607d8b';
+}
+
+function getExamBadge(exam) {
+  if(exam.includes('公务员')) return 'badge-red';
+  if(exam.includes('事业')) return 'badge-blue';
+  if(exam.includes('教资')) return 'badge-purple';
+  if(exam.includes('三支')) return 'badge-orange';
+  return 'badge-gray';
+}
+
+document.addEventListener('DOMContentLoaded', filterSchedule);
+</script>
+</body>
+</html>

@@ -14,6 +14,8 @@ function doSearch() {
   const keyword = document.getElementById('sKeyword').value.trim().toLowerCase();
   const ratioMin = parseFloat(document.getElementById('sRatioMin').value) || 0;
   const ratioMax = parseFloat(document.getElementById('sRatioMax').value) || Infinity;
+  const appMin = parseFloat(document.getElementById('sAppMin').value) || 0;
+  const appMax = parseFloat(document.getElementById('sAppMax').value) || Infinity;
 
   currentResults = POSITIONS_DATA.filter(p => {
     if (year && p.year !== parseInt(year)) return false;
@@ -31,6 +33,10 @@ function doSearch() {
     if (ratioMin > 0 || ratioMax < Infinity) {
       if (p.ratio === null || p.ratio === undefined) return false;
       if (p.ratio < ratioMin || p.ratio > ratioMax) return false;
+    }
+    if (appMin > 0 || appMax < Infinity) {
+      if (!p.applicants) return false;
+      if (p.applicants < appMin || p.applicants > appMax) return false;
     }
     return true;
   });
@@ -105,6 +111,7 @@ function renderResults() {
       <td><strong>${p.department || '-'}</strong></td>
       <td>${p.position || '-'}</td>
       <td>${p.education || '-'}</td>
+      <td style="font-size:12px;">${p.major || '-'}</td>
       <td style="text-align:center;font-weight:600;">${p.recruits}</td>
       <td style="text-align:center;">${appStr}</td>
       <td style="text-align:center;"><span class="${getRatioBadge(p.ratio)}">${ratioStr}${p.ratio ? ':1' : ''}</span></td>
