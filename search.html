@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>岗位查询 - 西藏公考通</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <i class="fas fa-mountain"></i>
+        西藏公考通
+        <span>岗位查询</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html"><i class="fas fa-home"></i> 首页</a>
+        <a href="search.html" class="active"><i class="fas fa-search"></i> 岗位查询</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Search Filters -->
+    <div class="card">
+      <div class="card-header"><i class="fas fa-filter"></i> 筛选条件</div>
+      <div class="card-body">
+        <div class="search-form" id="searchForm">
+          <div class="form-group">
+            <label>年份</label>
+            <select id="sYear">
+              <option value="">全部年份</option>
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>考试类型</label>
+            <select id="sType">
+              <option value="">全部类型</option>
+              <option value="公务员">公务员</option>
+              <option value="事业编（教育）">事业编（教育）</option>
+              <option value="事业编（综合）">事业编（综合）</option>
+              <option value="三支一扶">三支一扶</option>
+              <option value="人才引进">人才引进</option>
+              <option value="国考">国考</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>学历要求</label>
+            <select id="sEducation">
+              <option value="">全部学历</option>
+              <option value="专科及以上">专科及以上</option>
+              <option value="本科及以上">本科及以上</option>
+              <option value="硕士及以上">硕士及以上</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>工作地点</label>
+            <select id="sLocation">
+              <option value="">全部地区</option>
+              <option value="拉萨">拉萨</option>
+              <option value="日喀则">日喀则</option>
+              <option value="昌都">昌都</option>
+              <option value="林芝">林芝</option>
+              <option value="山南">山南</option>
+              <option value="那曲">那曲</option>
+              <option value="阿里">阿里</option>
+              <option value="全区">全区</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>部门/单位</label>
+            <input type="text" id="sDepartment" placeholder="如：教育厅、公安厅...">
+          </div>
+          <div class="form-group">
+            <label>专业/关键字</label>
+            <input type="text" id="sKeyword" placeholder="如：汉语言文学、不限...">
+          </div>
+          <div class="form-group">
+            <label>竞争比范围</label>
+            <div style="display:flex;gap:6px;align-items:center;">
+              <input type="number" id="sRatioMin" placeholder="最小" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:4px;font-size:13px;" min="0">
+              <span style="color:var(--text-light);">~</span>
+              <input type="number" id="sRatioMax" placeholder="最大" style="width:70px;padding:8px;border:1px solid var(--border);border-radius:4px;font-size:13px;" min="0">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>排序方式</label>
+            <select id="sSort">
+              <option value="year_desc">年份（新→旧）</option>
+              <option value="year_asc">年份（旧→新）</option>
+              <option value="ratio_desc">竞争比（高→低）</option>
+              <option value="ratio_asc">竞争比（低→高）</option>
+              <option value="recruits_desc">招录人数（多→少）</option>
+              <option value="applicants_desc">报名人数（多→少）</option>
+            </select>
+          </div>
+          <button onclick="doSearch()" class="btn btn-primary" style="grid-column: span 2;"><i class="fas fa-search"></i> 查询</button>
+          <button onclick="resetSearch()" class="btn btn-outline" style="grid-column: span 1;"><i class="fas fa-undo"></i> 重置</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="card">
+      <div class="card-header">
+        <i class="fas fa-list"></i> 查询结果
+        <span id="resultCount" style="font-size:13px;color:var(--text-light);margin-left:8px;"></span>
+      </div>
+      <div class="card-body">
+        <div class="table-wrap">
+          <table id="resultTable">
+            <thead>
+              <tr>
+                <th onclick="sortBy('year')">年份 <i class="fas fa-sort"></i></th>
+                <th onclick="sortBy('type')">类型 <i class="fas fa-sort"></i></th>
+                <th onclick="sortBy('department')">招考部门 <i class="fas fa-sort"></i></th>
+                <th onclick="sortBy('position')">职位名称 <i class="fas fa-sort"></i></th>
+                <th>学历要求</th>
+                <th onclick="sortBy('recruits')">招录 <i class="fas fa-sort"></i></th>
+                <th onclick="sortBy('applicants')">报名 <i class="fas fa-sort"></i></th>
+                <th onclick="sortBy('ratio')">竞争比 <i class="fas fa-sort"></i></th>
+                <th>分数线</th>
+                <th>地区</th>
+              </tr>
+            </thead>
+            <tbody id="resultBody"></tbody>
+          </table>
+        </div>
+        <div id="noResult" style="display:none;text-align:center;padding:40px;color:var(--text-light);">
+          <i class="fas fa-search" style="font-size:32px;margin-bottom:12px;display:block;"></i>
+          未找到匹配的岗位，请调整筛选条件
+        </div>
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </div>
+
+    <!-- Web Search -->
+    <div class="card">
+      <div class="card-header"><i class="fas fa-globe"></i> 联网搜索官方信息</div>
+      <div class="card-body">
+        <div style="display:flex;gap:8px;margin-bottom:12px;">
+          <input type="text" id="webQuery2" placeholder="搜索官方公告、政策" style="flex:1;padding:8px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;">
+          <button onclick="webSearch2()" class="btn btn-accent"><i class="fas fa-search"></i> 搜索</button>
+        </div>
+        <div id="webResults2" style="font-size:13px;color:var(--text-light);">输入关键词搜索最新招考信息</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>数据来源：<a href="https://hrss.xizang.gov.cn" target="_blank">西藏自治区人力资源和社会保障厅</a> | <a href="http://zp.cpta.com.cn" target="_blank">全国人事考试服务平台</a></p>
+    <p>本站数据仅供参考，请以官方公告为准</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/api.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load URL params
+      const params = new URLSearchParams(window.location.search);
+      if (params.has('qYear')) document.getElementById('sYear').value = params.get('qYear');
+      if (params.has('qType')) document.getElementById('sType').value = params.get('qType');
+      if (params.has('qEducation')) document.getElementById('sEducation').value = params.get('qEducation');
+      if (params.has('qLocation')) document.getElementById('sLocation').value = params.get('qLocation');
+      if (params.has('qKeyword')) document.getElementById('sKeyword').value = params.get('qKeyword');
+      doSearch();
+    });
+
+    function webSearch2() {
+      const q = document.getElementById('webQuery2').value.trim() || '西藏 事业单位 招聘 公告';
+      searchWeb(q, 'webResults2');
+    }
+  </script>
+</body>
+</html>
