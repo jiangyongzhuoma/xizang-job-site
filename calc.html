@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>成绩换算 - 西藏公考通</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.json"></head>
+<body>
+<header class="header"><div class="header-inner">
+<a href="index.html" class="logo"><i class="fas fa-mountain"></i> 西藏公考通 <span>换算器</span></a>
+<nav class="nav">
+<a href="index.html"><i class="fas fa-home"></i> 首页</a><a href="search.html"><i class="fas fa-search"></i> 岗位查询</a>
+<a href="exam.html"><i class="fas fa-pencil-alt"></i> 刷题</a><a href="calc.html" class="active"><i class="fas fa-calculator"></i> 换算</a>
+<a href="favorites.html"><i class="fas fa-star"></i> 收藏</a>
+<button id="themeToggle" class="theme-toggle" onclick="toggleTheme()">🌙</button>
+</nav></div></header>
+<main class="container">
+<div class="card"><div class="card-header"><i class="fas fa-calculator"></i> 公务员笔试成绩换算</div>
+<div class="card-body">
+<div class="search-form">
+<div class="form-group"><label>行测估分 (满分150)</label><input type="number" id="xingce" min="0" max="150" placeholder="0-150" style="padding:8px;border:1px solid var(--border);border-radius:4px;"></div>
+<div class="form-group"><label>申论估分 (满分150)</label><input type="number" id="shenlun" min="0" max="150" placeholder="0-150" style="padding:8px;border:1px solid var(--border);border-radius:4px;"></div>
+<div class="form-group"><label>加分 (不超过15)</label><input type="number" id="jf" min="0" max="15" placeholder="0-15" style="padding:8px;border:1px solid var(--border);border-radius:4px;"></div>
+<div class="form-group"><label>是否公安岗</label><select id="isGA" style="padding:8px;border:1px solid var(--border);border-radius:4px;"><option value="no">否</option><option value="yes">是（加试公安专业科目）</option></select></div>
+<div class="form-group"><label>公安专业科目 (满分100)</label><input type="number" id="gongan" min="0" max="100" placeholder="0-100" style="padding:8px;border:1px solid var(--border);border-radius:4px;" disabled></div>
+<button onclick="calcScore()" class="btn btn-primary"><i class="fas fa-calculator"></i> 计算</button>
+</div></div></div>
+
+<div id="calcResult" style="display:none;">
+<div class="card"><div class="card-header"><i class="fas fa-chart-bar"></i> 计算结果</div>
+<div class="card-body" id="calcBody"></div></div>
+<div class="card"><div class="card-header"><i class="fas fa-info-circle"></i> 分数说明</div>
+<div class="card-body" style="font-size:13px;color:var(--text-light);">
+<p>📌 非公安岗：笔试总分 = 行测 + 申论 + 加分（各150分）</p>
+<p>📌 公安岗：笔试总分 = 行测 + 申论 + 公安专业科目 + 加分</p>
+<p>📌 总成绩 = 笔试总分 ÷ 3(或4) × 60% + 面试成绩 × 40%</p>
+<p>📌 2025年区直事业单位控制线110分，教育事业单位160-170分</p>
+</div></div></div>
+</main>
+<footer class="footer"><p>仅供参考，实际以官方核定为准</p></footer>
+<script>
+function calcScore(){
+  const xc = parseFloat(document.getElementById('xingce').value) || 0;
+  const sl = parseFloat(document.getElementById('shenlun').value) || 0;
+  const jf = parseFloat(document.getElementById('jf').value) || 0;
+  const isGA = document.getElementById('isGA').value === 'yes';
+  const ga = parseFloat(document.getElementById('gongan').value) || 0;
+
+  if(xc === 0 && sl === 0) { alert('请输入至少一个科目成绩'); return; }
+
+  const total = xc + sl + (isGA ? ga : 0) + jf;
+  const divisor = isGA ? 4 : 3;
+  const avg = total / divisor;
+
+  document.getElementById('calcResult').style.display = 'block';
+  let html = `<div class="stats-grid" style="grid-template-cols:repeat(auto-fit,minmax(140px,1fr));">
+    <div class="stat-item"><div class="num">${xc}</div><div class="label">行测</div></div>
+    <div class="stat-item"><div class="num">${sl}</div><div class="label">申论</div></div>
+    ${isGA ? `<div class="stat-item"><div class="num">${ga}</div><div class="label">公安专业</div></div>` : ''}
+    <div class="stat-item"><div class="num">${jf}</div><div class="label">加分</div></div>
+    <div class="stat-item"><div class="num" style="color:var(--primary);">${total}</div><div class="label">笔试总分</div></div>
+    <div class="stat-item"><div class="num" style="color:var(--accent);font-size:28px;">${avg.toFixed(2)}</div><div class="label">折算均分</div></div>
+  </div>`;
+
+  // Explanation
+  const formula = isGA ? `(${xc}+${sl}+${ga}+${jf})÷4 = ${total}÷4 = ${avg.toFixed(2)}` : `(${xc}+${sl}+${jf})÷3 = ${total}÷3 = ${avg.toFixed(2)}`;
+  html += `<div style="margin-top:16px;padding:12px;background:#f0f7ff;border-radius:6px;font-size:13px;">
+    <strong>📝 计算过程：</strong><br>${formula}<br><br>
+    <strong>💡 总成绩（假设面试80分）：</strong><br>${avg.toFixed(2)}×60% + 80×40% = ${(avg*0.6+32).toFixed(2)}分<br><br>
+    <strong>📊 参考判断：</strong><br>${total >= 170 ? '✅ 达到教育事业单位控制线(170分)' : '❌ 未达到教育事业单位控制线(170分)'}<br>
+    ${total >= 160 ? '✅ 达到昌都教育事业单位控制线(160分)' : '❌ 未达到昌都教育事业单位控制线(160分)'}<br>
+    ${total >= 110 ? '✅ 达到区直事业单位控制线(110分)' : '❌ 未达到区直事业单位控制线(110分)'}
+  </div>`;
+
+  document.getElementById('calcBody').innerHTML = html;
+}
+
+document.getElementById('isGA').onchange = function(){
+  document.getElementById('gongan').disabled = this.value !== 'yes';
+};
+
+function toggleTheme() {
+  const d = document.documentElement;
+  const isDark = d.getAttribute('data-theme')==='dark';
+  d.setAttribute('data-theme',isDark?'light':'dark');
+  localStorage.setItem('theme',isDark?'light':'dark');
+  document.getElementById('themeToggle').textContent = isDark?'🌙':'☀️';
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  const saved = localStorage.getItem('theme');
+  if(saved==='dark'){document.documentElement.setAttribute('data-theme','dark');document.getElementById('themeToggle').textContent='☀️';}
+});
+</script>
+<script src="js/qa.js"></script>
+</body>
+</html>

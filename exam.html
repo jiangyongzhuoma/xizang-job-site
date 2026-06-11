@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>在线刷题 - 西藏公考通</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.json"></head>
+<body>
+<header class="header"><div class="header-inner">
+<a href="index.html" class="logo"><i class="fas fa-mountain"></i> 西藏公考通 <span>刷题</span></a>
+<nav class="nav">
+<a href="index.html"><i class="fas fa-home"></i> 首页</a><a href="search.html"><i class="fas fa-search"></i> 岗位查询</a>
+<a href="exam.html" class="active"><i class="fas fa-pencil-alt"></i> 刷题</a>
+<a href="calc.html"><i class="fas fa-calculator"></i> 换算</a>
+<a href="favorites.html"><i class="fas fa-star"></i> 收藏</a>
+<button id="themeToggle" class="theme-toggle" onclick="toggleTheme()">🌙</button>
+</nav></div></header>
+<main class="container">
+<div class="card"><div class="card-header"><i class="fas fa-filter"></i> 刷题设置</div>
+<div class="card-body">
+<div class="search-form">
+<div class="form-group"><label>科目</label><select id="qSubject"><option value="xingce">行测</option><option value="shenlun">申论</option></select></div>
+<div class="form-group"><label>题量</label><select id="qCount"><option value="5">5题</option><option value="10" selected>10题</option><option value="20">20题</option></select></div>
+<div class="form-group"><label>难度</label><select id="qDiff"><option value="easy">简单</option><option value="medium" selected>中等</option><option value="hard">困难</option></select></div>
+<button onclick="startQuiz()" class="btn btn-primary"><i class="fas fa-play"></i> 开始刷题</button>
+</div></div></div>
+
+<div id="quizArea" style="display:none;">
+<div class="card"><div class="card-header"><i class="fas fa-question-circle"></i> <span id="qProgress"></span> <span style="font-size:13px;color:var(--text-light);margin-left:auto;" id="qScore">得分: 0</span></div>
+<div class="card-body" id="qBody"></div></div>
+<div style="display:flex;gap:8px;justify-content:center;margin-bottom:16px;">
+<button onclick="submitQuiz()" class="btn btn-accent"><i class="fas fa-check"></i> 提交答案</button>
+<button onclick="startQuiz()" class="btn btn-outline"><i class="fas fa-redo"></i> 重新出题</button>
+</div></div>
+
+<div id="resultArea" style="display:none;">
+<div class="card"><div class="card-header"><i class="fas fa-chart-pie"></i> 答题结果</div>
+<div class="card-body" id="resultBody"></div></div></div>
+</main>
+<footer class="footer"><p>题目仅供练习参考</p></footer>
+<script>
+const QUESTIONS = {
+  xingce: [
+    {q:'西藏自治区成立于哪一年？',o:['1951年','1956年','1965年','1979年'],a:2,cat:'常识'},
+    {q:'世界最高峰珠穆朗玛峰位于中国与哪个国家的边境？',o:['印度','尼泊尔','不丹','缅甸'],a:1,cat:'常识'},
+    {q:'"三人行，必有我师焉"出自哪部著作？',o:['《论语》','《孟子》','《大学》','《中庸》'],a:0,cat:'文史'},
+    {q:'依次填入下面一段文字横线处的语句，衔接最恰当的一组是：读书的目的，________。________，________。________，________。①不仅仅是为了获得知识②更是为了培养独立思考的能力③在这个信息爆炸的时代④学会辨别真伪尤为重要⑤只有这样才能不被谣言所惑',o:['①②③④⑤','①③④⑤②','①②④③⑤','①③②④⑤'],a:2,cat:'言语'},
+    {q:'下列词语中没有错别字的一组是：',o:['脍炙人口 不径而走','按步就班 穿流不息','迫不及待 世外桃源','一股作气 滥竽充数'],a:2,cat:'言语'},
+    {q:'某单位有3个科室，第一科室有5人，第二科室有7人，第三科室有8人，现从中选2人参加会议，要求两人来自不同科室，有多少种选法？',o:['131种','143种','151种','167种'],a:1,cat:'数量'},
+    {q:'甲乙两人从A地出发去B地，甲的速度是4km/h，乙的速度是5km/h，甲比乙早出发30分钟，问乙出发后多久追上甲？',o:['1小时','1.5小时','2小时','2.5小时'],a:2,cat:'数量'},
+    {q:'一次考试，全班平均分是80分，其中男生平均分是75分，女生平均分是85分，问男女生人数比是多少？',o:['1:1','2:1','1:2','3:2'],a:0,cat:'数量'},
+    {q:'请从所给的四个选项中，选择最合适的一个填入问号处：\n△ ○ □ \n○ □ △ \n□ △ ?',o:['△','○','□','◇'],a:1,cat:'判断'},
+    {q:'所有的鸟都会飞。企鹅是鸟。所以企鹅会飞。\n以下哪项与上述推理错误最相似？',o:['所有的花都是植物。玫瑰是花。所以玫瑰是植物。','所有的猫都喜欢吃鱼。小花是猫。所以小花喜欢吃鱼。','所有的学生都学习。小明是学生。所以小明学习。','所有的金属都导电。塑料不导电。所以塑料不是金属。'],a:1,cat:'判断'},
+    {q:'2025年西藏公务员笔试中，申论考试时间为多少分钟？',o:['120分钟','150分钟','180分钟','90分钟'],a:1,cat:'常识'},
+    {q:'西藏自治区下辖几个地级市？',o:['5个','6个','7个','8个'],a:1,cat:'常识'},
+    {q:'下列哪项是西藏最新的战略定位之一？',o:['一带一路核心区','国家生态文明高地','经济特区','自贸试验区'],a:1,cat:'时政'},
+    {q:'2026年西藏公务员计划考录多少人？',o:['385人','475人','535人','621人'],a:1,cat:'时政'},
+    {q:'"先天下之忧而忧，后天下之乐而乐"的作者是？',o:['杜甫','范仲淹','王安石','欧阳修'],a:1,cat:'文史'},
+    {q:'2025年西藏教育事业单位教师岗位的笔试最低控制线是？',o:['110分','160分','170分','150分'],a:2,cat:'常识'},
+    {q:'下列成语使用恰当的是：',o:['他家的藏书真是汗牛充栋','这个方案差强人意，需要大改','他的发言引起了哄堂大笑','这个问题让人感到首当其冲'],a:0,cat:'言语'},
+    {q:'甲、乙、丙三人一起买了8个面包平分着吃，甲付了5个面包的钱，乙付了3个面包的钱，丙没有付钱。事后丙拿出了8元钱给甲和乙，问甲应得多少钱？',o:['5元','6元','7元','8元'],a:2,cat:'数量'},
+    {q:'某商品按定价的80%出售，仍可获得20%的利润，问定价时的利润率是多少？',o:['40%','50%','60%','70%'],a:1,cat:'数量'},
+    {q:'以下选项中，哪个不是西藏的国家级自然保护区？',o:['珠穆朗玛峰自然保护区','羌塘自然保护区','可可西里自然保护区','武夷山自然保护区'],a:3,cat:'常识'},
+  ],
+  shenlun: [
+    {q:'申论A类试卷主要考查什么能力？',o:['宏观政策分析能力','基层事务处理能力','依法行政能力','公文写作能力'],a:0,cat:'申论'},
+    {q:'申论满分多少分？考试时间多久？',o:['100分/120分钟','150分/150分钟','150分/120分钟','200分/180分钟'],a:1,cat:'申论'},
+    {q:'申论大作文一般要求写多少字？',o:['500-600字','600-800字','800-1000字','1000-1200字'],a:2,cat:'申论'},
+    {q:'西藏公务员考试中，申论试卷分为几类？',o:['2类','3类','4类','5类'],a:1,cat:'申论'},
+    {q:'以下哪个不是申论常见的题型？',o:['归纳概括题','综合分析题','数学运算题','文章写作题'],a:2,cat:'申论'},
+  ]
+};
+
+let currentQ = [], currentIdx = 0, answers = [], submitted = false;
+
+function startQuiz() {
+  const subj = document.getElementById('qSubject').value;
+  const count = parseInt(document.getElementById('qCount').value);
+  const pool = [...QUESTIONS[subj]];
+  currentQ = pool.sort(()=>Math.random()-0.5).slice(0,count);
+  currentIdx = 0; answers = []; submitted = false;
+  document.getElementById('quizArea').style.display = 'block';
+  document.getElementById('resultArea').style.display = 'none';
+  renderQ();
+}
+
+function renderQ() {
+  document.getElementById('qProgress').textContent = `第 ${currentIdx+1}/${currentQ.length} 题`;
+  const q = currentQ[currentIdx];
+  let html = `<div style="font-size:12px;color:var(--text-light);margin-bottom:8px;">[${q.cat}] 难度: ${document.getElementById('qDiff').value==='easy'?'简单':document.getElementById('qDiff').value==='hard'?'困难':'中等'}</div>`;
+  html += `<div style="font-size:15px;font-weight:500;margin-bottom:16px;line-height:1.6;white-space:pre-wrap;">${q.q}</div>`;
+  html += '<div style="display:grid;gap:8px;">';
+  q.o.forEach((opt, i) => {
+    const checked = answers[currentIdx] === i ? 'checked' : '';
+    html += `<label style="display:flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--border);border-radius:6px;cursor:pointer;${checked?'border-color:var(--primary);background:#f0f7ff;':''}">
+      <input type="radio" name="qOpt" value="${i}" ${checked} onchange="answers[${currentIdx}]=${i}" style="width:16px;height:16px;">
+      <span>${String.fromCharCode(65+i)}. ${opt}</span>
+    </label>`;
+  });
+  html += '</div>';
+  document.getElementById('qBody').innerHTML = html;
+
+  let nav = '<div style="display:flex;justify-content:space-between;margin-top:16px;">';
+  nav += `<button onclick="goQ(-1)" class="btn btn-outline" ${currentIdx===0?'disabled':''}><i class="fas fa-chevron-left"></i> 上一题</button>`;
+  nav += `<span style="font-size:13px;color:var(--text-light);align-self:center;">${answers.filter(a=>a!==undefined).length}/${currentQ.length} 已答</span>`;
+  nav += `<button onclick="goQ(1)" class="btn btn-outline" ${currentIdx===currentQ.length-1?'disabled':''}>下一题 <i class="fas fa-chevron-right"></i></button>`;
+  nav += '</div>';
+  document.getElementById('qBody').innerHTML += nav;
+  document.getElementById('qScore').textContent = `得分: ${answers.filter((a,i)=>a===currentQ[i]?.a).length}`;
+}
+
+function goQ(dir) { currentIdx += dir; renderQ(); }
+
+function submitQuiz() {
+  if(submitted) return;
+  submitted = true;
+  const correct = answers.filter((a,i)=>a===currentQ[i]?.a).length;
+  const total = currentQ.length;
+  const pct = Math.round(correct/total*100);
+  document.getElementById('quizArea').style.display = 'none';
+  document.getElementById('resultArea').style.display = 'block';
+  let color = pct>=80?'var(--success)':pct>=50?'var(--warning)':'var(--danger)';
+  document.getElementById('resultBody').innerHTML = `
+    <div style="text-align:center;padding:20px;">
+      <div style="font-size:48px;font-weight:700;color:${color};">${correct}/${total}</div>
+      <div style="font-size:16px;color:var(--text-light);margin:8px 0;">正确率 ${pct}%</div>
+      <div style="width:100%;height:8px;background:var(--border);border-radius:4px;margin:12px 0;overflow:hidden;">
+        <div style="width:${pct}%;height:100%;background:${color};border-radius:4px;transition:width 1s;"></div>
+      </div>
+      <div style="font-size:13px;color:var(--text-light);">${pct>=80?'优秀！继续保持！':pct>=50?'还不错，继续努力！':'需要加强练习！'}</div>
+    </div>
+    <div style="margin-top:16px;">${currentQ.map((q,i)=>{
+      const isC = answers[i]===q.a;
+      return `<div style="padding:10px;border:1px solid ${isC?'var(--success)':'var(--danger)'};border-radius:6px;margin-bottom:6px;font-size:13px;">
+        <span style="font-weight:600;color:${isC?'var(--success)':'var(--danger)'};">${isC?'✓':'✗'}</span>
+        ${q.q.substring(0,60)}${q.q.length>60?'...':''}
+        <span style="color:var(--text-light);margin-left:8px;">正确答案: ${String.fromCharCode(65+q.a)}</span>
+      </div>`;
+    }).join('')}</div>`;
+}
+
+function toggleTheme() {
+  const d = document.documentElement;
+  const isDark = d.getAttribute('data-theme')==='dark';
+  d.setAttribute('data-theme',isDark?'light':'dark');
+  localStorage.setItem('theme',isDark?'light':'dark');
+  document.getElementById('themeToggle').textContent = isDark?'🌙':'☀️';
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  const saved = localStorage.getItem('theme');
+  if(saved==='dark'){document.documentElement.setAttribute('data-theme','dark');document.getElementById('themeToggle').textContent='☀️';}
+});
+</script>
+<script src="js/qa.js"></script>
+</body>
+</html>

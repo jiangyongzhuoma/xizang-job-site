@@ -101,6 +101,7 @@ function renderResults() {
   let html = '';
   pageData.forEach(p => {
     const ratioStr = p.ratio ? p.ratio.toFixed(1) : '-';
+  const heat = getHeatLabel(p.ratio);
     const appStr = p.applicants ? p.applicants.toLocaleString() : '-';
     const scoreStr = p.score_line ? p.score_line + '分' : '-';
     const typeBadge = getTypeBadge(p.type);
@@ -147,6 +148,14 @@ function getRatioBadge(ratio) {
   if (ratio <= 30) return 'badge badge-blue';
   if (ratio <= 100) return 'badge badge-orange';
   return 'badge badge-red';
+}
+
+function getHeatLabel(ratio) {
+  if (!ratio) return '';
+  if (ratio > 500) return '🔥🔥🔥';
+  if (ratio > 200) return '🔥🔥';
+  if (ratio > 80) return '🔥';
+  return '';
 }
 
 // === 对比功能 ===
