@@ -1,0 +1,102 @@
+# 西藏公考通 - 每日自动更新
+# 每天北京时间 9:00 (UTC 1:00) 自动检查西藏人社厅官网最新公告
+name: Daily Update Check
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # UTC 1:00 = 北京时间 9:00
+  workflow_dispatch:       # 可手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  check-updates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch announcements from hrss.xizang.gov.cn
+        run: |
+          echo "Fetching announcement list..."
+          curl -sL "https://hrss.xizang.gov.cn/xwzx/tzgg/" -o /tmp/announcements.html
+          echo "Page fetched: $(wc -c < /tmp/announcements.html) bytes"
+
+      - name: Parse today's announcements
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          BEIJING_DATE=$(TZ='Asia/Shanghai' date +%Y-%m-%d)
+          echo "Today (UTC): $TODAY"
+          echo "Today (Beijing): $BEIJING_DATE"
+
+          # Parse HTML to extract announcements
+          python3 << 'PYEOF'
+          import re
+          from datetime import datetime
+          import json
+
+          with open('/tmp/announcements.html', 'r', encoding='utf-8') as f:
+              html = f.read()
+
+          # Extract announcement items
+          # Pattern: href="./202604/t20260423_536510.html" followed by date
+          items = re.findall(
+              r'<a[^>]*href="(\./\d+/t\d+_\d+\.html)"[^>]*>(.*?)</a>\s*(\d{4}-\d{2}-\d{2})',
+              html
+          )
+
+          results = []
+          beijing_today = __import__('datetime').datetime.now().strftime('%Y-%m-%d')
+
+          for href, title, date in items:
+              title = re.sub(r'<[^>]+>', '', title).strip()
+              full_url = f"https://hrss.xizang.gov.cn/xwzx/tzgg/{href.replace('./', '')}"
+
+              # Check if it's from today
+              if date != beijing_today:
+                  continue
+
+              # Check if related to exams/jobs
+              keywords = ['公务员', '事业', '招聘', '考录', '遴选', '三支一扶', '教师', '教资', '国考',
+                         '人才引进', '就业', '岗位', '招录', '报名', '考试', '笔试', '面试']
+              if any(kw in title for kw in keywords):
+                  results.append({
+                      'title': title,
+                      'url': full_url,
+                      'date': date,
+                      'source': '西藏人社厅'
+                  })
+
+          # Write output
+          output = {
+              'date': beijing_today,
+              'count': len(results),
+              'items': results,
+              'updated_at': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+          }
+
+          with open('/tmp/daily-updates.json', 'w', encoding='utf-8') as f:
+              json.dump(output, f, ensure_ascii=False, indent=2)
+
+          print(f"Found {len(results)} today's announcements")
+          for r in results:
+              print(f"  - {r['title']}")
+
+          if len(results) == 0:
+              # No new announcements today, check yesterday too
+              print("No announcements today. Keeping previous data.")
+              PYEOF
+
+      - name: Update daily-updates.json
+        run: |
+          if [ -f /tmp/daily-updates.json ]; then
+            cp /tmp/daily-updates.json js/daily-updates.json
+          fi
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "xizang-job-site-bot"
+          git config user.email "bot@xizang-job-site.github.io"
+          git add js/daily-updates.json
+          git diff --cached --quiet || (git commit -m "chore: daily update $(TZ='Asia/Shanghai' date +%Y-%m-%d)" && git push)
