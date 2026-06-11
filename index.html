@@ -135,7 +135,8 @@
 
   <footer class="footer">
     <p>数据来源：<a href="https://hrss.xizang.gov.cn" target="_blank">西藏自治区人力资源和社会保障厅</a> | <a href="http://zp.cpta.com.cn" target="_blank">全国人事考试服务平台</a></p>
-    <p>本站数据仅供参考，请以官方公告为准</p>
+    <p>涵盖2021-2026年公务员、事业编、三支一扶、人才引进等 <strong>447条</strong> 岗位数据</p>
+    <p>本站数据仅供参考，请以官方公告为准 | 最后更新：2026-06-11</p>
   </footer>
 
   <script src="js/data.js"></script>
@@ -165,18 +166,8 @@
     }
 
     function loadNews() {
-      const news = [
-        { title: '西藏自治区2026年高校毕业生公开考录公务员公告', date: '2025-12-02', url: 'https://hrss.xizang.gov.cn/xwzx/tzgg/202512/t20251202_512168.html' },
-        { title: '西藏自治区2026年度政府部门所属事业单位急需紧缺人才引进公告', date: '2025-12-29', url: 'https://hrss.xizang.gov.cn/xwzx/tzgg/202512/t20251229_516398.html' },
-        { title: '西藏自治区2026年度定向选调应届优秀大学毕业生公告', date: '2025-12-02', url: 'https://hrss.xizang.gov.cn/xwzx/tzgg/202512/t20251202_512171.html' },
-        { title: '西藏自治区2025年教育事业单位公开招聘高校毕业生公告', date: '2025-05-28', url: 'https://hrss.xizang.gov.cn/xwzx/tzgg/202505/t20250528_480992.html' },
-        { title: '西藏自治区2025年高校毕业生公开考录公务员公告（385人）', date: '2025-01-13', url: 'https://hrss.xizang.gov.cn/xwzx/tzgg/202501/t20250113_456938.html' },
-        { title: '西藏自治区2025年区直事业单位公开招聘高校毕业生公告（621人）', date: '2025-05-28', url: 'https://hrss.xizang.gov.cn/xwzx/tzgg/202505/t20250528_480992.html' },
-        { title: '西藏自治区直属机关2025年度公开遴选公务员（参公人员）公告', date: '2025-10-09', url: 'https://hrss.xizang.gov.cn/xwzx/tzgg/202510/t20251009_502736.html' },
-        { title: '西藏自治区2026年第一批全区高校毕业生就业岗位需求计划公告', date: '2026-02-09', url: 'https://hrss.xizang.gov.cn/xwzx/tzgg/202602/t20260209_523583.html' },
-      ];
       const ul = document.getElementById('newsList');
-      news.forEach(item => {
+      NEWS_ITEMS.forEach(item => {
         const li = document.createElement('li');
         li.innerHTML = `<div><a class="news-title" href="${item.url}" target="_blank">${item.title}</a><div class="news-meta">西藏自治区人力资源和社会保障厅</div></div><span class="news-date">${item.date}</span>`;
         ul.appendChild(li);

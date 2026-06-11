@@ -1,5 +1,6 @@
-// 西藏公考职位数据
+// 西藏公考通 - 完整数据文件
 // 数据来源：西藏自治区人社厅、全国人事考试服务平台
+// 最后更新：2026-06-11
 
 const POSITIONS_DATA = [
   {
@@ -14,7 +15,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261002",
@@ -28,7 +30,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261003",
@@ -42,7 +45,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261004",
@@ -56,7 +60,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261005",
@@ -70,7 +75,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261006",
@@ -84,7 +90,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261007",
@@ -98,7 +105,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261008",
@@ -112,7 +120,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261009",
@@ -126,7 +135,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261010",
@@ -140,7 +150,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261011",
@@ -154,7 +165,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261012",
@@ -168,7 +180,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261013",
@@ -182,7 +195,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261014",
@@ -196,7 +210,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261015",
@@ -210,7 +225,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261016",
@@ -224,7 +240,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261017",
@@ -238,7 +255,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261018",
@@ -252,7 +270,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261019",
@@ -266,7 +285,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261020",
@@ -280,7 +300,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261021",
@@ -294,7 +315,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261022",
@@ -308,7 +330,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261023",
@@ -322,7 +345,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261024",
@@ -336,7 +360,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261025",
@@ -350,7 +375,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261026",
@@ -364,7 +390,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261027",
@@ -378,7 +405,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261028",
@@ -392,7 +420,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261029",
@@ -406,7 +435,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261030",
@@ -420,7 +450,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261031",
@@ -434,7 +465,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261032",
@@ -448,7 +480,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261033",
@@ -462,7 +495,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261034",
@@ -476,7 +510,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261035",
@@ -490,7 +525,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261036",
@@ -504,7 +540,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261037",
@@ -518,7 +555,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261038",
@@ -532,7 +570,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261039",
@@ -546,7 +585,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261040",
@@ -560,7 +600,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261041",
@@ -574,7 +615,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261042",
@@ -588,7 +630,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261043",
@@ -602,7 +645,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261044",
@@ -616,7 +660,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261045",
@@ -630,7 +675,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261046",
@@ -644,7 +690,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261047",
@@ -658,7 +705,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261048",
@@ -672,7 +720,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261049",
@@ -686,7 +735,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261050",
@@ -700,7 +750,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261051",
@@ -714,7 +765,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261052",
@@ -728,7 +780,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261053",
@@ -742,7 +795,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261054",
@@ -756,7 +810,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261055",
@@ -770,7 +825,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261056",
@@ -784,7 +840,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261057",
@@ -798,7 +855,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261058",
@@ -812,7 +870,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261059",
@@ -826,7 +885,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261060",
@@ -840,7 +900,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261061",
@@ -854,7 +915,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261062",
@@ -868,7 +930,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261063",
@@ -882,7 +945,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261064",
@@ -896,7 +960,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261066",
@@ -910,7 +975,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261067",
@@ -924,7 +990,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261068",
@@ -938,7 +1005,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261069",
@@ -952,7 +1020,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261070",
@@ -966,7 +1035,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261071",
@@ -980,7 +1050,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261072",
@@ -994,7 +1065,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261073",
@@ -1008,7 +1080,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261074",
@@ -1022,7 +1095,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261075",
@@ -1036,7 +1110,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261076",
@@ -1050,7 +1125,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261077",
@@ -1064,7 +1140,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261078",
@@ -1078,7 +1155,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261079",
@@ -1092,7 +1170,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261080",
@@ -1106,7 +1185,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261081",
@@ -1120,7 +1200,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261082",
@@ -1134,7 +1215,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261083",
@@ -1148,7 +1230,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261084",
@@ -1162,7 +1245,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261085",
@@ -1176,7 +1260,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261086",
@@ -1190,7 +1275,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261087",
@@ -1204,7 +1290,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261088",
@@ -1218,7 +1305,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261089",
@@ -1232,7 +1320,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261090",
@@ -1246,7 +1335,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261091",
@@ -1260,7 +1350,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261092",
@@ -1274,7 +1365,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261093",
@@ -1288,7 +1380,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261094",
@@ -1302,7 +1395,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261095",
@@ -1316,7 +1410,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261096",
@@ -1330,7 +1425,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261097",
@@ -1344,7 +1440,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261098",
@@ -1358,7 +1455,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261099",
@@ -1372,7 +1470,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261100",
@@ -1386,7 +1485,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261101",
@@ -1400,7 +1500,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261102",
@@ -1414,7 +1515,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261103",
@@ -1428,7 +1530,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261104",
@@ -1442,7 +1545,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261105",
@@ -1456,7 +1560,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261106",
@@ -1470,7 +1575,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261107",
@@ -1484,7 +1590,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261108",
@@ -1498,7 +1605,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261109",
@@ -1512,7 +1620,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261110",
@@ -1526,7 +1635,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261111",
@@ -1540,7 +1650,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261112",
@@ -1554,7 +1665,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261113",
@@ -1568,7 +1680,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261114",
@@ -1582,7 +1695,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261115",
@@ -1596,7 +1710,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261117",
@@ -1610,7 +1725,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261118",
@@ -1624,7 +1740,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261119",
@@ -1638,7 +1755,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261120",
@@ -1652,7 +1770,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261121",
@@ -1666,7 +1785,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261122",
@@ -1680,7 +1800,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261123",
@@ -1694,7 +1815,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261124",
@@ -1708,7 +1830,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261125",
@@ -1722,7 +1845,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261126",
@@ -1736,7 +1860,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261127",
@@ -1750,7 +1875,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261128",
@@ -1764,7 +1890,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261129",
@@ -1778,7 +1905,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261130",
@@ -1792,7 +1920,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261131",
@@ -1806,7 +1935,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261132",
@@ -1820,7 +1950,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261133",
@@ -1834,7 +1965,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261134",
@@ -1848,7 +1980,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261135",
@@ -1862,7 +1995,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261136",
@@ -1876,7 +2010,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261137",
@@ -1890,7 +2025,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261138",
@@ -1904,7 +2040,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261139",
@@ -1918,7 +2055,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261140",
@@ -1932,7 +2070,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261141",
@@ -1946,7 +2085,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261142",
@@ -1960,7 +2100,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261143",
@@ -1974,7 +2115,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261144",
@@ -1988,7 +2130,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261145",
@@ -2002,7 +2145,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261146",
@@ -2016,7 +2160,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261147",
@@ -2030,7 +2175,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261148",
@@ -2044,7 +2190,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261149",
@@ -2058,7 +2205,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261150",
@@ -2072,7 +2220,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261151",
@@ -2086,7 +2235,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261152",
@@ -2100,7 +2250,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261153",
@@ -2114,7 +2265,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261160",
@@ -2128,7 +2280,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261161",
@@ -2142,7 +2295,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261162",
@@ -2156,7 +2310,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261163",
@@ -2170,7 +2325,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261164",
@@ -2184,7 +2340,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261165",
@@ -2198,7 +2355,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261166",
@@ -2212,7 +2370,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261167",
@@ -2226,7 +2385,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261168",
@@ -2240,7 +2400,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261169",
@@ -2254,7 +2415,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261170",
@@ -2268,7 +2430,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261171",
@@ -2282,7 +2445,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261172",
@@ -2296,7 +2460,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261173",
@@ -2310,7 +2475,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261174",
@@ -2324,7 +2490,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261175",
@@ -2338,7 +2505,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261176",
@@ -2352,7 +2520,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261177",
@@ -2366,7 +2535,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261178",
@@ -2380,7 +2550,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261179",
@@ -2394,7 +2565,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261180",
@@ -2408,7 +2580,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261181",
@@ -2422,7 +2595,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261182",
@@ -2436,7 +2610,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261183",
@@ -2450,7 +2625,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261184",
@@ -2464,7 +2640,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261185",
@@ -2478,7 +2655,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261186",
@@ -2492,7 +2670,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261187",
@@ -2506,7 +2685,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261188",
@@ -2520,7 +2700,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261189",
@@ -2534,7 +2715,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261190",
@@ -2548,7 +2730,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261191",
@@ -2562,7 +2745,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261192",
@@ -2576,7 +2760,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261193",
@@ -2590,7 +2775,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261194",
@@ -2604,7 +2790,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261195",
@@ -2618,7 +2805,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261196",
@@ -2632,7 +2820,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261197",
@@ -2646,7 +2835,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261198",
@@ -2660,7 +2850,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261199",
@@ -2674,7 +2865,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261200",
@@ -2688,7 +2880,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261201",
@@ -2702,7 +2895,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261202",
@@ -2716,7 +2910,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261203",
@@ -2730,7 +2925,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261204",
@@ -2744,7 +2940,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261205",
@@ -2758,7 +2955,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261206",
@@ -2772,7 +2970,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261207",
@@ -2786,7 +2985,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261208",
@@ -2800,7 +3000,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261209",
@@ -2814,7 +3015,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261210",
@@ -2828,7 +3030,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261211",
@@ -2842,7 +3045,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261212",
@@ -2856,7 +3060,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261213",
@@ -2870,7 +3075,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261214",
@@ -2884,7 +3090,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261215",
@@ -2898,7 +3105,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261216",
@@ -2912,7 +3120,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261217",
@@ -2926,7 +3135,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261218",
@@ -2940,7 +3150,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261219",
@@ -2954,7 +3165,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261220",
@@ -2968,7 +3180,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261221",
@@ -2982,7 +3195,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261222",
@@ -2996,7 +3210,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261223",
@@ -3010,7 +3225,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261224",
@@ -3024,7 +3240,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261225",
@@ -3038,7 +3255,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261226",
@@ -3052,7 +3270,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261227",
@@ -3066,7 +3285,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261228",
@@ -3080,7 +3300,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261229",
@@ -3094,7 +3315,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261230",
@@ -3108,7 +3330,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261231",
@@ -3122,7 +3345,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261232",
@@ -3136,7 +3360,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261233",
@@ -3150,7 +3375,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261234",
@@ -3164,7 +3390,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261235",
@@ -3178,7 +3405,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261236",
@@ -3192,7 +3420,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261237",
@@ -3206,7 +3435,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261238",
@@ -3220,7 +3450,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261239",
@@ -3234,7 +3465,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261240",
@@ -3248,7 +3480,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261241",
@@ -3262,7 +3495,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261242",
@@ -3276,7 +3510,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261243",
@@ -3290,7 +3525,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261244",
@@ -3304,7 +3540,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261245",
@@ -3318,7 +3555,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261246",
@@ -3332,7 +3570,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261247",
@@ -3346,7 +3585,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261248",
@@ -3360,7 +3600,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261249",
@@ -3374,7 +3615,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261250",
@@ -3388,7 +3630,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261251",
@@ -3402,7 +3645,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261252",
@@ -3416,7 +3660,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261253",
@@ -3430,7 +3675,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261254",
@@ -3444,7 +3690,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261255",
@@ -3458,7 +3705,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261256",
@@ -3472,7 +3720,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261257",
@@ -3486,7 +3735,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261258",
@@ -3500,7 +3750,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261259",
@@ -3514,7 +3765,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261260",
@@ -3528,7 +3780,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261261",
@@ -3542,7 +3795,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261262",
@@ -3556,7 +3810,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261263",
@@ -3570,7 +3825,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261264",
@@ -3584,7 +3840,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261265",
@@ -3598,7 +3855,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261266",
@@ -3612,7 +3870,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261267",
@@ -3626,7 +3885,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261269",
@@ -3640,7 +3900,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261270",
@@ -3654,7 +3915,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261271",
@@ -3668,7 +3930,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261272",
@@ -3682,7 +3945,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261273",
@@ -3696,7 +3960,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261274",
@@ -3710,7 +3975,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261275",
@@ -3724,7 +3990,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261276",
@@ -3738,7 +4005,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261277",
@@ -3752,7 +4020,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261278",
@@ -3766,7 +4035,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261279",
@@ -3780,7 +4050,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261280",
@@ -3794,7 +4065,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261281",
@@ -3808,7 +4080,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261282",
@@ -3822,7 +4095,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261283",
@@ -3836,7 +4110,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261284",
@@ -3850,7 +4125,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261285",
@@ -3864,7 +4140,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261286",
@@ -3878,7 +4155,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261287",
@@ -3892,7 +4170,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261288",
@@ -3906,7 +4185,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261289",
@@ -3920,7 +4200,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261290",
@@ -3934,7 +4215,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261291",
@@ -3948,7 +4230,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261292",
@@ -3962,7 +4245,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261293",
@@ -3976,7 +4260,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261294",
@@ -3990,7 +4275,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261295",
@@ -4004,7 +4290,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261296",
@@ -4018,7 +4305,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261297",
@@ -4032,7 +4320,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261298",
@@ -4046,7 +4335,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261299",
@@ -4060,7 +4350,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261300",
@@ -4074,7 +4365,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261301",
@@ -4088,7 +4380,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261302",
@@ -4102,7 +4395,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261303",
@@ -4116,7 +4410,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261304",
@@ -4130,7 +4425,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261305",
@@ -4144,7 +4440,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261306",
@@ -4158,7 +4455,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261307",
@@ -4172,7 +4470,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261308",
@@ -4186,7 +4485,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261309",
@@ -4200,7 +4500,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261310",
@@ -4214,7 +4515,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261311",
@@ -4228,7 +4530,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261312",
@@ -4242,7 +4545,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261313",
@@ -4256,7 +4560,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261314",
@@ -4270,7 +4575,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261315",
@@ -4284,7 +4590,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261316",
@@ -4298,7 +4605,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261317",
@@ -4312,7 +4620,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261318",
@@ -4326,7 +4635,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261320",
@@ -4340,7 +4650,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261321",
@@ -4354,7 +4665,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261322",
@@ -4368,7 +4680,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261323",
@@ -4382,7 +4695,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261324",
@@ -4396,7 +4710,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261325",
@@ -4410,7 +4725,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261326",
@@ -4424,7 +4740,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261327",
@@ -4438,7 +4755,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261328",
@@ -4452,7 +4770,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261329",
@@ -4466,7 +4785,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261330",
@@ -4480,7 +4800,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261331",
@@ -4494,7 +4815,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261332",
@@ -4508,7 +4830,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261333",
@@ -4522,7 +4845,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261334",
@@ -4536,7 +4860,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261335",
@@ -4550,7 +4875,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261336",
@@ -4564,7 +4890,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261337",
@@ -4578,7 +4905,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261338",
@@ -4592,7 +4920,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261339",
@@ -4606,7 +4935,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261340",
@@ -4620,7 +4950,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261341",
@@ -4634,7 +4965,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261342",
@@ -4648,7 +4980,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261343",
@@ -4662,7 +4995,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261344",
@@ -4676,7 +5010,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261345",
@@ -4690,7 +5025,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261346",
@@ -4704,7 +5040,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261347",
@@ -4718,7 +5055,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261348",
@@ -4732,7 +5070,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261349",
@@ -4746,7 +5085,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261350",
@@ -4760,7 +5100,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261351",
@@ -4774,7 +5115,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261352",
@@ -4788,7 +5130,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261353",
@@ -4802,7 +5145,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261354",
@@ -4816,7 +5160,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261355",
@@ -4830,7 +5175,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261356",
@@ -4844,7 +5190,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261357",
@@ -4858,7 +5205,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261358",
@@ -4872,7 +5220,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261359",
@@ -4886,7 +5235,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261360",
@@ -4900,7 +5250,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261361",
@@ -4914,7 +5265,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261362",
@@ -4928,7 +5280,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261363",
@@ -4942,7 +5295,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261364",
@@ -4956,7 +5310,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261365",
@@ -4970,7 +5325,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261366",
@@ -4984,7 +5340,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261367",
@@ -4998,7 +5355,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261368",
@@ -5012,7 +5370,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261369",
@@ -5026,7 +5385,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261370",
@@ -5040,7 +5400,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261371",
@@ -5054,7 +5415,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261372",
@@ -5068,7 +5430,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261373",
@@ -5082,7 +5445,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261374",
@@ -5096,7 +5460,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261375",
@@ -5110,7 +5475,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261376",
@@ -5124,7 +5490,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261377",
@@ -5138,7 +5505,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261378",
@@ -5152,7 +5520,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261379",
@@ -5166,7 +5535,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261380",
@@ -5180,7 +5550,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261381",
@@ -5194,7 +5565,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261382",
@@ -5208,7 +5580,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261383",
@@ -5222,7 +5595,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261384",
@@ -5236,7 +5610,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261385",
@@ -5250,7 +5625,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261386",
@@ -5264,7 +5640,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261387",
@@ -5278,7 +5655,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261388",
@@ -5292,7 +5670,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261389",
@@ -5306,7 +5685,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261390",
@@ -5320,7 +5700,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261391",
@@ -5334,7 +5715,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261392",
@@ -5348,7 +5730,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261393",
@@ -5362,7 +5745,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261394",
@@ -5376,7 +5760,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261395",
@@ -5390,7 +5775,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261396",
@@ -5404,7 +5790,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261397",
@@ -5418,7 +5805,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261398",
@@ -5432,7 +5820,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261399",
@@ -5446,7 +5835,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261400",
@@ -5460,7 +5850,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261401",
@@ -5474,7 +5865,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261402",
@@ -5488,7 +5880,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261403",
@@ -5502,7 +5895,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261404",
@@ -5516,7 +5910,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261405",
@@ -5530,7 +5925,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261406",
@@ -5544,7 +5940,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261407",
@@ -5558,7 +5955,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261408",
@@ -5572,7 +5970,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261409",
@@ -5586,7 +5985,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261410",
@@ -5600,7 +6000,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261411",
@@ -5614,7 +6015,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261412",
@@ -5628,7 +6030,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261413",
@@ -5642,7 +6045,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261414",
@@ -5656,7 +6060,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261415",
@@ -5670,7 +6075,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261416",
@@ -5684,7 +6090,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261417",
@@ -5698,7 +6105,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261418",
@@ -5712,7 +6120,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261419",
@@ -5726,7 +6135,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261420",
@@ -5740,7 +6150,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261421",
@@ -5754,7 +6165,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261422",
@@ -5768,7 +6180,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261423",
@@ -5782,7 +6195,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261424",
@@ -5796,7 +6210,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261425",
@@ -5810,7 +6225,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261426",
@@ -5824,7 +6240,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261427",
@@ -5838,7 +6255,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
     "id": "20261428",
@@ -5852,427 +6270,353 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "",
-    "location": "全区"
+    "location": "全区",
+    "note": ""
   },
   {
-    "id": "202501001",
+    "id": "2021G001",
+    "year": 2021,
+    "type": "公务员",
+    "department": "西藏自治区",
+    "position": "公务员招考",
+    "recruits": 286,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "",
+    "major": "",
+    "location": "全区",
+    "note": "职位数205个"
+  },
+  {
+    "id": "2022G001",
+    "year": 2022,
+    "type": "公务员",
+    "department": "西藏自治区",
+    "position": "公务员招考",
+    "recruits": 304,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "",
+    "major": "",
+    "location": "全区",
+    "note": "职位数254个"
+  },
+  {
+    "id": "2023G001",
+    "year": 2023,
+    "type": "公务员",
+    "department": "西藏自治区",
+    "position": "公务员招考",
+    "recruits": 297,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "",
+    "major": "",
+    "location": "全区",
+    "note": "职位数275个"
+  },
+  {
+    "id": "2024G001",
+    "year": 2024,
+    "type": "公务员",
+    "department": "西藏自治区",
+    "position": "公务员招考",
+    "recruits": 303,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "",
+    "major": "",
+    "location": "全区",
+    "note": "职位数286个"
+  },
+  {
+    "id": "2025G001",
     "year": 2025,
     "type": "公务员",
-    "department": "自治区纪委监委",
-    "position": "审查调查",
-    "recruits": 2,
-    "applicants": 45,
-    "ratio": 22.5,
+    "department": "西藏自治区",
+    "position": "公务员招考",
+    "recruits": 385,
+    "applicants": null,
+    "ratio": null,
     "score_line": null,
-    "education": "本科及以上",
-    "major": "法学、会计",
-    "location": "拉萨"
+    "education": "",
+    "major": "",
+    "location": "全区",
+    "note": "职位数362个,拟录用377人"
   },
   {
-    "id": "202501002",
+    "id": "2025G002",
     "year": 2025,
     "type": "公务员",
-    "department": "自治区党委办公厅",
-    "position": "文秘",
-    "recruits": 1,
-    "applicants": 35,
-    "ratio": 35.0,
+    "department": "西藏自治区",
+    "position": "少数民族专项招录",
+    "recruits": null,
+    "applicants": null,
+    "ratio": null,
     "score_line": null,
-    "education": "本科及以上",
-    "major": "汉语言文学",
-    "location": "拉萨"
+    "education": "",
+    "major": "",
+    "location": "全区",
+    "note": "西藏籍少数民族专项"
   },
   {
-    "id": "202501003",
+    "id": "2025G003",
     "year": 2025,
     "type": "公务员",
-    "department": "自治区政府办公厅",
-    "position": "综合管理",
-    "recruits": 2,
-    "applicants": 68,
-    "ratio": 34.0,
+    "department": "区直机关",
+    "position": "公开遴选",
+    "recruits": 210,
+    "applicants": null,
+    "ratio": null,
     "score_line": null,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "拉萨"
+    "education": "",
+    "major": "",
+    "location": "拉萨",
+    "note": "面向在职公务员"
   },
   {
-    "id": "202501004",
-    "year": 2025,
-    "type": "公务员",
-    "department": "自治区教育厅",
-    "position": "教育管理",
-    "recruits": 1,
-    "applicants": 28,
-    "ratio": 28.0,
-    "score_line": null,
-    "education": "硕士及以上",
-    "major": "教育学、文学",
-    "location": "拉萨"
-  },
-  {
-    "id": "202501005",
-    "year": 2025,
-    "type": "公务员",
-    "department": "自治区公安厅",
-    "position": "公安执法",
-    "recruits": 5,
-    "applicants": 120,
-    "ratio": 24.0,
-    "score_line": null,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "拉萨"
-  },
-  {
-    "id": "202501006",
-    "year": 2025,
-    "type": "公务员",
-    "department": "日喀则市",
-    "position": "乡镇公务员",
-    "recruits": 3,
-    "applicants": 156,
-    "ratio": 52.0,
-    "score_line": null,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "日喀则"
-  },
-  {
-    "id": "202501007",
-    "year": 2025,
-    "type": "公务员",
-    "department": "昌都市",
-    "position": "乡镇公务员",
-    "recruits": 4,
-    "applicants": 180,
-    "ratio": 45.0,
-    "score_line": null,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "昌都"
-  },
-  {
-    "id": "202501008",
-    "year": 2025,
-    "type": "公务员",
-    "department": "那曲市",
-    "position": "乡镇公务员",
-    "recruits": 3,
-    "applicants": 96,
-    "ratio": 32.0,
-    "score_line": null,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "那曲"
-  },
-  {
-    "id": "202501009",
-    "year": 2025,
-    "type": "公务员",
-    "department": "阿里地区",
-    "position": "乡镇公务员",
-    "recruits": 2,
-    "applicants": 42,
-    "ratio": 21.0,
-    "score_line": null,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "阿里"
-  },
-  {
-    "id": "202501010",
-    "year": 2025,
-    "type": "公务员",
-    "department": "拉萨市",
-    "position": "街道办",
-    "recruits": 2,
-    "applicants": 98,
-    "ratio": 49.0,
-    "score_line": null,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "拉萨"
-  },
-  {
-    "id": "202509001",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "拉萨中学",
-    "position": "高中语文教师",
-    "recruits": 1,
-    "applicants": 18,
-    "ratio": 18.0,
-    "score_line": 170,
-    "education": "硕士及以上",
-    "major": "汉语言文学教育",
-    "location": "拉萨"
-  },
-  {
-    "id": "202509002",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "拉萨中学",
-    "position": "高中数学教师",
-    "recruits": 1,
-    "applicants": 15,
-    "ratio": 15.0,
-    "score_line": 170,
-    "education": "硕士及以上",
-    "major": "数学教育",
-    "location": "拉萨"
-  },
-  {
-    "id": "202509003",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "拉萨中学",
-    "position": "高中英语教师",
-    "recruits": 1,
-    "applicants": 22,
-    "ratio": 22.0,
-    "score_line": 170,
-    "education": "硕士及以上",
-    "major": "英语教育",
-    "location": "拉萨"
-  },
-  {
-    "id": "202509004",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "日喀则市",
-    "position": "中学语文教师",
-    "recruits": 2,
-    "applicants": 48,
-    "ratio": 24.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "汉语言文学",
-    "location": "日喀则"
-  },
-  {
-    "id": "202509005",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "日喀则市",
-    "position": "中学数学教师",
-    "recruits": 2,
-    "applicants": 36,
-    "ratio": 18.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "数学",
-    "location": "日喀则"
-  },
-  {
-    "id": "202509006",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "昌都市",
-    "position": "中学语文教师",
-    "recruits": 3,
-    "applicants": 52,
-    "ratio": 17.3,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "汉语言文学",
-    "location": "昌都"
-  },
-  {
-    "id": "202509007",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "昌都市",
-    "position": "中学英语教师",
-    "recruits": 2,
-    "applicants": 38,
-    "ratio": 19.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "英语",
-    "location": "昌都"
-  },
-  {
-    "id": "202509008",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "那曲市",
-    "position": "中学语文教师",
-    "recruits": 2,
-    "applicants": 24,
-    "ratio": 12.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "汉语言文学",
-    "location": "那曲"
-  },
-  {
-    "id": "202509009",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "那曲市",
-    "position": "小学数学教师",
-    "recruits": 3,
-    "applicants": 42,
-    "ratio": 14.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "数学",
-    "location": "那曲"
-  },
-  {
-    "id": "202509010",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "拉萨市",
-    "position": "小学语文教师",
-    "recruits": 4,
-    "applicants": 120,
-    "ratio": 30.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "汉语言文学",
-    "location": "拉萨"
-  },
-  {
-    "id": "202509011",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "阿里地区",
-    "position": "中学教师",
-    "recruits": 2,
-    "applicants": 16,
-    "ratio": 8.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "阿里"
-  },
-  {
-    "id": "202509012",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "林芝市",
-    "position": "中学语文教师",
-    "recruits": 1,
-    "applicants": 15,
-    "ratio": 15.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "汉语言文学",
-    "location": "林芝"
-  },
-  {
-    "id": "202509013",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "山南市",
-    "position": "中学语文教师",
-    "recruits": 2,
-    "applicants": 36,
-    "ratio": 18.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "汉语言文学",
-    "location": "山南"
-  },
-  {
-    "id": "202509014",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "日喀则市",
-    "position": "小学教师",
-    "recruits": 5,
-    "applicants": 110,
-    "ratio": 22.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "日喀则"
-  },
-  {
-    "id": "202509015",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "昌都市",
-    "position": "小学教师",
-    "recruits": 4,
-    "applicants": 68,
-    "ratio": 17.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "昌都"
-  },
-  {
-    "id": "202505001",
+    "id": "2025S001",
     "year": 2025,
     "type": "事业编（综合）",
-    "department": "自治区人民医院",
-    "position": "临床医生",
-    "recruits": 3,
-    "applicants": 12,
-    "ratio": 4.0,
+    "department": "西藏自治区",
+    "position": "区直事业单位招聘",
+    "recruits": 621,
+    "applicants": null,
+    "ratio": null,
     "score_line": 110,
-    "education": "硕士及以上",
-    "major": "临床医学",
-    "location": "拉萨"
+    "education": "",
+    "major": "",
+    "location": "全区",
+    "note": "含A/B/C/D/E/Z类岗位"
   },
   {
-    "id": "202505002",
+    "id": "2025S002",
     "year": 2025,
-    "type": "事业编（综合）",
-    "department": "自治区藏医院",
-    "position": "藏医",
-    "recruits": 2,
-    "applicants": 18,
-    "ratio": 9.0,
-    "score_line": 110,
-    "education": "硕士及以上",
-    "major": "藏医学",
-    "location": "拉萨"
+    "type": "事业编（教育）",
+    "department": "西藏自治区教育厅",
+    "position": "教育事业单位招聘",
+    "recruits": 535,
+    "applicants": null,
+    "ratio": null,
+    "score_line": 160,
+    "education": "",
+    "major": "",
+    "location": "全区",
+    "note": "471个职位,含中小学幼儿园教师"
   },
   {
-    "id": "202505003",
+    "id": "2025S003",
+    "year": 2025,
+    "type": "事业编（教育）",
+    "department": "昌都市教育局",
+    "position": "教育事业单位招聘",
+    "recruits": null,
+    "applicants": null,
+    "ratio": null,
+    "score_line": 160,
+    "education": "",
+    "major": "",
+    "location": "昌都",
+    "note": "笔试最低控制线160分"
+  },
+  {
+    "id": "2025S004",
+    "year": 2025,
+    "type": "事业编（教育）",
+    "department": "日喀则市教育局",
+    "position": "教育事业单位招聘",
+    "recruits": null,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "",
+    "major": "",
+    "location": "日喀则",
+    "note": "面试合格进入考察名单已公示"
+  },
+  {
+    "id": "2025S005",
+    "year": 2025,
+    "type": "事业编（教育）",
+    "department": "教育厅直属学校",
+    "position": "中小学教师招聘",
+    "recruits": null,
+    "applicants": null,
+    "ratio": null,
+    "score_line": 170,
+    "education": "",
+    "major": "",
+    "location": "拉萨",
+    "note": "笔试最低控制线170分"
+  },
+  {
+    "id": "2025S006",
     "year": 2025,
     "type": "事业编（综合）",
-    "department": "自治区公路局",
-    "position": "工程技术",
-    "recruits": 4,
-    "applicants": 85,
-    "ratio": 21.3,
-    "score_line": 110,
-    "education": "本科及以上",
-    "major": "土木工程",
-    "location": "拉萨"
+    "department": "重庆市人社局",
+    "position": "就业援藏事业单位招聘",
+    "recruits": 70,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "",
+    "major": "",
+    "location": "重庆",
+    "note": "面向西藏生源"
+  },
+  {
+    "id": "2025S007",
+    "year": 2025,
+    "type": "事业编（综合）",
+    "department": "广东省人社厅",
+    "position": "专项招聘西藏籍少数民族",
+    "recruits": 50,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "",
+    "major": "",
+    "location": "广东",
+    "note": "面向西藏籍少数民族"
+  },
+  {
+    "id": "2025S008",
+    "year": 2025,
+    "type": "事业编（综合）",
+    "department": "上海市人社局",
+    "position": "就业援藏事业单位招聘",
+    "recruits": 13,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "",
+    "major": "",
+    "location": "上海",
+    "note": "面向西藏生源"
+  },
+  {
+    "id": "2025S009",
+    "year": 2025,
+    "type": "事业编（综合）",
+    "department": "北京市/安徽省/湖南省",
+    "position": "就业援藏事业单位招聘",
+    "recruits": 25,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "",
+    "major": "",
+    "location": "北京/安徽/湖南",
+    "note": "面向西藏籍"
+  },
+  {
+    "id": "2025S010",
+    "year": 2025,
+    "type": "事业编（综合）",
+    "department": "四川省/贵州省/河南省",
+    "position": "非援藏省面向西藏籍招聘",
+    "recruits": 7,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "",
+    "major": "",
+    "location": "川/黔/豫",
+    "note": "面向西藏籍少数民族"
   },
   {
     "id": "2025F001",
     "year": 2025,
     "type": "三支一扶",
-    "department": "自治区教育厅",
-    "position": "支教",
-    "recruits": 1,
-    "applicants": 8,
-    "ratio": 8.0,
+    "department": "西藏自治区人社厅",
+    "position": "三支一扶招募",
+    "recruits": 1350,
+    "applicants": null,
+    "ratio": null,
     "score_line": null,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "全区"
+    "education": "",
+    "major": "",
+    "location": "全区",
+    "note": "含支医、支教、乡村振兴等"
   },
   {
-    "id": "2025F002",
-    "year": 2025,
-    "type": "三支一扶",
-    "department": "日喀则市",
-    "position": "支医",
-    "recruits": 2,
-    "applicants": 6,
-    "ratio": 3.0,
+    "id": "2026R001",
+    "year": 2026,
+    "type": "人才引进",
+    "department": "拉萨中学",
+    "position": "急需紧缺人才引进",
+    "recruits": 7,
+    "applicants": null,
+    "ratio": null,
     "score_line": null,
-    "education": "专科及以上",
-    "major": "医学",
-    "location": "日喀则"
+    "education": "硕士及以上",
+    "major": "数学/物理/化学/生物",
+    "location": "拉萨",
+    "note": "面向33所重点师范院校"
+  },
+  {
+    "id": "2026R002",
+    "year": 2026,
+    "type": "人才引进",
+    "department": "西藏自治区政府办公厅",
+    "position": "急需紧缺人才引进",
+    "recruits": 6,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "硕士及以上",
+    "major": "地质/经济/法学/计算机",
+    "location": "拉萨",
+    "note": "双一流大学"
+  },
+  {
+    "id": "2026R003",
+    "year": 2026,
+    "type": "人才引进",
+    "department": "政府部门所属事业单位",
+    "position": "急需紧缺人才引进",
+    "recruits": 130,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "硕士及以上",
+    "major": "多专业",
+    "location": "全区",
+    "note": "含教育/医疗/交通等"
+  },
+  {
+    "id": "2026R004",
+    "year": 2026,
+    "type": "人才引进",
+    "department": "西藏完全中学",
+    "position": "急需紧缺人才引进",
+    "recruits": 30,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "硕士及以上",
+    "major": "师范类",
+    "location": "拉萨",
+    "note": "事业编制"
+  },
+  {
+    "id": "2026R005",
+    "year": 2026,
+    "type": "人才引进",
+    "department": "昌都市",
+    "position": "急需紧缺人才引进",
+    "recruits": 25,
+    "applicants": null,
+    "ratio": null,
+    "score_line": null,
+    "education": "硕士及以上",
+    "major": "多专业",
+    "location": "昌都",
+    "note": ""
   },
   {
     "id": "G2025001",
@@ -6286,7 +6630,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "不限",
-    "location": "林芝"
+    "location": "林芝",
+    "note": ""
   },
   {
     "id": "G2025002",
@@ -6300,7 +6645,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "不限",
-    "location": "日喀则"
+    "location": "日喀则",
+    "note": ""
   },
   {
     "id": "G2025003",
@@ -6314,7 +6660,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "不限",
-    "location": "日喀则"
+    "location": "日喀则",
+    "note": ""
   },
   {
     "id": "G2025004",
@@ -6328,7 +6675,8 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "经济学类",
-    "location": "拉萨"
+    "location": "拉萨",
+    "note": ""
   },
   {
     "id": "G2025005",
@@ -6342,141 +6690,238 @@ const POSITIONS_DATA = [
     "score_line": null,
     "education": "本科及以上",
     "major": "中国语言文学类",
-    "location": "拉萨"
+    "location": "拉萨",
+    "note": ""
   },
   {
-    "id": "202401001",
-    "year": 2024,
-    "type": "公务员",
-    "department": "自治区纪委监委",
-    "position": "监督检查",
-    "recruits": 2,
-    "applicants": 38,
-    "ratio": 19.0,
-    "score_line": null,
-    "education": "硕士及以上",
-    "major": "法学、会计",
-    "location": "拉萨"
-  },
-  {
-    "id": "202401002",
-    "year": 2024,
-    "type": "公务员",
-    "department": "日喀则市",
-    "position": "乡镇公务员",
-    "recruits": 5,
-    "applicants": 210,
-    "ratio": 42.0,
-    "score_line": null,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "日喀则"
-  },
-  {
-    "id": "202401003",
-    "year": 2024,
-    "type": "公务员",
-    "department": "昌都市",
-    "position": "乡镇公务员",
-    "recruits": 4,
-    "applicants": 148,
-    "ratio": 37.0,
-    "score_line": null,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "昌都"
-  },
-  {
-    "id": "202401004",
-    "year": 2024,
-    "type": "公务员",
-    "department": "那曲市",
-    "position": "乡镇公务员",
-    "recruits": 3,
-    "applicants": 72,
-    "ratio": 24.0,
-    "score_line": null,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "那曲"
-  },
-  {
-    "id": "2026R001",
-    "year": 2026,
-    "type": "人才引进",
-    "department": "拉萨中学",
-    "position": "高中教师",
-    "recruits": 7,
+    "id": "G2025006",
+    "year": 2025,
+    "type": "国考",
+    "department": "西藏出入境边防检查总站",
+    "position": "阿里/山南/林芝边检",
+    "recruits": 6,
     "applicants": null,
     "ratio": null,
     "score_line": null,
-    "education": "硕士及以上",
-    "major": "数学、物理、化学、生物",
-    "location": "拉萨"
-  },
-  {
-    "id": "2026R002",
-    "year": 2026,
-    "type": "人才引进",
-    "department": "自治区人民医院",
-    "position": "临床医生",
-    "recruits": 10,
-    "applicants": null,
-    "ratio": null,
-    "score_line": null,
-    "education": "硕士及以上",
-    "major": "临床医学",
-    "location": "拉萨"
+    "education": "本科及以上",
+    "major": "汉语言文学",
+    "location": "西藏",
+    "note": ""
   }
 ];
 
 const YEARLY_STATS = {
   "2026": {
-    "recruits": 481,
+    "recruits": 662,
     "applicants": 37758,
-    "count": 420
+    "count": 423
   },
-  "2025": {
-    "recruits": 77,
-    "applicants": 10490,
-    "count": 35
+  "2021": {
+    "recruits": 286,
+    "applicants": 0,
+    "count": 1
+  },
+  "2022": {
+    "recruits": 304,
+    "applicants": 0,
+    "count": 1
+  },
+  "2023": {
+    "recruits": 297,
+    "applicants": 0,
+    "count": 1
   },
   "2024": {
-    "recruits": 14,
-    "applicants": 468,
-    "count": 4
+    "recruits": 303,
+    "applicants": 0,
+    "count": 1
+  },
+  "2025": {
+    "recruits": 3277,
+    "applicants": 8833,
+    "count": 20
   }
 };
 
 const TYPE_STATS = {
   "公务员": {
-    "recruits": 503,
-    "applicants": 39094,
-    "count": 432
-  },
-  "事业编（教育）": {
-    "recruits": 35,
-    "applicants": 660,
-    "count": 15
+    "recruits": 2249,
+    "applicants": 37758,
+    "count": 425
   },
   "事业编（综合）": {
-    "recruits": 9,
-    "applicants": 115,
-    "count": 3
+    "recruits": 786,
+    "applicants": 0,
+    "count": 6
+  },
+  "事业编（教育）": {
+    "recruits": 535,
+    "applicants": 0,
+    "count": 4
   },
   "三支一扶": {
-    "recruits": 3,
-    "applicants": 14,
-    "count": 2
-  },
-  "国考": {
-    "recruits": 5,
-    "applicants": 8833,
-    "count": 5
+    "recruits": 1350,
+    "applicants": 0,
+    "count": 1
   },
   "人才引进": {
-    "recruits": 17,
+    "recruits": 198,
     "applicants": 0,
-    "count": 2
+    "count": 5
+  },
+  "国考": {
+    "recruits": 11,
+    "applicants": 8833,
+    "count": 6
   }
+};
+
+const NEWS_ITEMS = [
+  {
+    "title": "西藏自治区2026年高校毕业生公开考录公务员公告（475人）",
+    "date": "2025-12-02",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202512/t20251202_512168.html"
+  },
+  {
+    "title": "西藏自治区2026年度政府部门所属事业单位急需紧缺人才引进公告",
+    "date": "2025-12-29",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202512/t20251229_516398.html"
+  },
+  {
+    "title": "西藏自治区2026年度定向选调应届优秀大学毕业生公告",
+    "date": "2025-12-02",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202512/t20251202_512171.html"
+  },
+  {
+    "title": "2026年第一批全区高校毕业生就业岗位需求计划公告",
+    "date": "2026-02-09",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202602/t20260209_523583.html"
+  },
+  {
+    "title": "西藏自治区2025年教育事业单位公开招聘高校毕业生公告（535人）",
+    "date": "2025-05-28",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202505/t20250528_480992.html"
+  },
+  {
+    "title": "西藏自治区2025年高校毕业生公开考录公务员公告（385人）",
+    "date": "2025-01-13",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202501/t20250113_456938.html"
+  },
+  {
+    "title": "西藏自治区2025年区直事业单位公开招聘公告（621人）",
+    "date": "2025-05-28",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202505/t20250528_480992.html"
+  },
+  {
+    "title": "西藏自治区2025年公开招募三支一扶人员公告（1350人）",
+    "date": "2025-08-01",
+    "url": "https://hrss.xizang.gov.cn"
+  },
+  {
+    "title": "2025年就业援藏省（市）事业单位面向西藏籍高校毕业生招聘",
+    "date": "2025-11-25",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202511/t20251125_511092.html"
+  },
+  {
+    "title": "西藏自治区直属机关2025年度公开遴选公务员公告（210人）",
+    "date": "2025-10-09",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202510/t20251009_502736.html"
+  },
+  {
+    "title": "西藏自治区2024年高校毕业生公开考录公务员公告（303人）",
+    "date": "2024-03-29",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202403/t20240329_409829.html"
+  },
+  {
+    "title": "西藏自治区2023年高校毕业生公开考录公务员公告（297人）",
+    "date": "2023-02-08",
+    "url": "https://www.ncss.cn/ncss/jydt/jy/202302/20230208/2256348579.html"
+  },
+  {
+    "title": "西藏自治区2022年高校毕业生公开考录公务员公告（304人）",
+    "date": "2022-03-17",
+    "url": "http://sft.xizang.gov.cn/xwzx/gsgg/202203/t20220317_288726.html"
+  },
+  {
+    "title": "西藏自治区2021年高校毕业生公开考录公务员公告（286人）",
+    "date": "2021-05-13",
+    "url": "https://hrss.lasa.gov.cn/rsj/rsrc/202105/7a61953ad2974103bf7748eaf2f0504f.shtml"
+  }
+];
+
+const OFFICIAL_LINKS = [
+  {
+    "name": "西藏人社厅-通知公告",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/",
+    "icon": "fas fa-bullhorn"
+  },
+  {
+    "name": "全国人事考试服务平台",
+    "url": "http://zp.cpta.com.cn",
+    "icon": "fas fa-laptop"
+  },
+  {
+    "name": "西藏人社厅-招聘信息",
+    "url": "https://hrss.xizang.gov.cn/syfw/cyfw/zpxx/",
+    "icon": "fas fa-briefcase"
+  },
+  {
+    "name": "西藏自治区人民政府",
+    "url": "https://www.xizang.gov.cn",
+    "icon": "fas fa-landmark"
+  },
+  {
+    "name": "拉萨市人社局",
+    "url": "https://hrss.lasa.gov.cn",
+    "icon": "fas fa-city"
+  },
+  {
+    "name": "日喀则市委-招考录用",
+    "url": "https://rikaze.xzdw.gov.cn/fbt/gsgg_367/",
+    "icon": "fas fa-city"
+  },
+  {
+    "name": "阿里地区人社局",
+    "url": "https://hrss.al.gov.cn",
+    "icon": "fas fa-city"
+  }
+];
+
+const TYPE_KEYWORDS = {
+  "公务员": [
+    "公务员",
+    "省考",
+    "西藏公务员",
+    "gwy"
+  ],
+  "事业编（教育）": [
+    "教师",
+    "教育",
+    "中小学教师",
+    "事业编",
+    "教招"
+  ],
+  "事业编（综合）": [
+    "事业单位",
+    "事业编",
+    "综合"
+  ],
+  "三支一扶": [
+    "三支一扶",
+    "支教",
+    "支医"
+  ],
+  "人才引进": [
+    "人才引进",
+    "急需紧缺"
+  ],
+  "国考": [
+    "国考",
+    "国家公务员",
+    "中央"
+  ],
+  "遴选": [
+    "遴选",
+    "选调"
+  ]
 };
