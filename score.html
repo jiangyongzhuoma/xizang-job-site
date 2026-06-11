@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>分数线查询 - 西藏公考通</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="header"><div class="header-inner">
+<a href="index.html" class="logo"><i class="fas fa-mountain"></i> 西藏公考通 <span>分数线</span></a>
+<nav class="nav">
+<a href="index.html"><i class="fas fa-home"></i> 首页</a>
+<a href="search.html"><i class="fas fa-search"></i> 岗位查询</a>
+<a href="score.html" class="active"><i class="fas fa-chart-line"></i> 分数线</a>
+<a href="material.html"><i class="fas fa-book"></i> 备考</a>
+</nav></div></header>
+
+<main class="container">
+  <div class="card">
+    <div class="card-header"><i class="fas fa-filter"></i> 筛选分数线</div>
+    <div class="card-body">
+      <div class="search-form">
+        <div class="form-group"><label>年份</label><select id="scYear"><option value="">全部</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option></select></div>
+        <div class="form-group"><label>考试类型</label><select id="scType"><option value="">全部</option><option value="公务员">公务员</option><option value="事业编（教育）">事业编（教育）</option><option value="事业编（综合）">事业编（综合）</option><option value="事业单位">事业单位</option></select></div>
+        <div class="form-group"><label>地区</label><select id="scLoc"><option value="">全部</option><option value="全区">全区</option><option value="拉萨">拉萨</option><option value="昌都">昌都</option></select></div>
+        <button onclick="filterScores()" class="btn btn-primary"><i class="fas fa-search"></i> 查询</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><i class="fas fa-table"></i> 分数线列表</div>
+    <div class="card-body">
+      <div class="table-wrap"><table><thead><tr><th>年份</th><th>考试类型</th><th>地区</th><th>项目</th><th>分数线</th><th>备注</th></tr></thead><tbody id="scoreBody"></tbody></table></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><i class="fas fa-chart-bar"></i> 年度招录人数趋势</div>
+    <div class="card-body"><div style="height:280px;"><canvas id="scoreChart"></canvas></div></div>
+  </div>
+</main>
+
+<footer class="footer"><p>数据来源：西藏自治区人社厅 | 仅供参考</p></footer>
+<script src="js/data.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){ filterScores(); initScoreChart(); });
+
+function filterScores(){
+  const y = document.getElementById('scYear').value;
+  const t = document.getElementById('scType').value;
+  const l = document.getElementById('scLoc').value;
+  const items = SCORE_DATA.filter(d => (!y||d.year==y) && (!t||d.type==t) && (!l||d.location==l));
+  const tb = document.getElementById('scoreBody');
+  tb.innerHTML = items.map(d => `<tr><td>${d.year}</td><td><span class="badge badge-blue">${d.type}</span></td><td>${d.location}</td><td>${d.name}</td><td style="font-weight:700;font-size:16px;color:var(--primary)">${d.score}${d.score>100?'分':''}</td><td style="font-size:12px;color:var(--text-light)">${d.note||''}</td></tr>`).join('');
+}
+
+function initScoreChart(){
+  const data = SCORE_DATA.filter(d => d.name==="招录总数");
+  new Chart(document.getElementById('scoreChart'), {
+    type: 'bar',
+    data: {
+      labels: data.map(d=>d.year),
+      datasets: [{
+        label: '公务员招录人数',
+        data: data.map(d=>d.score),
+        backgroundColor: 'rgba(26,107,138,0.7)',
+        borderRadius: 4
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true, ticks: { stepSize: 50 } } }
+    }
+  });
+}
+</script>
+</body>
+</html>

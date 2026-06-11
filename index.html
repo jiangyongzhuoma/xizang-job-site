@@ -19,6 +19,8 @@
       <nav class="nav">
         <a href="index.html" class="active"><i class="fas fa-home"></i> 首页</a>
         <a href="search.html"><i class="fas fa-search"></i> 岗位查询</a>
+        <a href="score.html"><i class="fas fa-chart-line"></i> 分数线</a>
+        <a href="material.html"><i class="fas fa-book"></i> 备考</a>
       </nav>
     </div>
   </header>
@@ -30,6 +32,11 @@
         <h1 style="font-size: 28px; margin-bottom: 8px;">西藏自治区公职考试岗位查询平台</h1>
         <p style="font-size: 15px; opacity: 0.85;">收录近五年公务员、事业编、三支一扶等岗位数据，一键查询竞争比、分数线</p>
       </div>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="container">
+      <div class="feature-grid" id="featureGrid"></div>
     </div>
 
     <!-- Stats -->
@@ -135,7 +142,7 @@
 
   <footer class="footer">
     <p>数据来源：<a href="https://hrss.xizang.gov.cn" target="_blank">西藏自治区人力资源和社会保障厅</a> | <a href="http://zp.cpta.com.cn" target="_blank">全国人事考试服务平台</a></p>
-    <p>涵盖2021-2026年公务员、事业编、三支一扶、人才引进等 <strong>447条</strong> 岗位数据</p>
+    <p>涵盖2021-2026年公务员、事业编、三支一扶、人才引进等 <strong>528条</strong> 岗位数据</p>
     <p>本站数据仅供参考，请以官方公告为准 | 最后更新：2026-06-11</p>
   </footer>
 
@@ -148,6 +155,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       loadStats();
       loadNews();
+      loadFeatures();
       initChart();
     });
 
@@ -182,6 +190,17 @@
         if (v) params.set(f, v);
       });
       window.location.href = 'search.html?' + params.toString();
+    }
+
+    function loadFeatures() {
+      const grid = document.getElementById('featureGrid');
+      NAV_LINKS.forEach(item => {
+        grid.innerHTML += `<a href="${item.url}" class="feature-card fade-in" style="background:${item.color}">
+          <i class="fas ${item.icon}"></i>
+          <div class="fc-title">${item.title}</div>
+          <div class="fc-desc">${item.desc}</div>
+        </a>`;
+      });
     }
 
     function webSearch() {

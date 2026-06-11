@@ -1,7 +1,4 @@
-// 西藏公考通 - 完整数据文件
-// 数据来源：西藏自治区人社厅、全国人事考试服务平台
-// 最后更新：2026-06-11
-
+// 西藏公考通 - 完整数据
 const POSITIONS_DATA = [
   {
     "id": "20261001",
@@ -6474,7 +6471,7 @@ const POSITIONS_DATA = [
     "id": "2025E007",
     "year": 2025,
     "type": "事业编（教育）",
-    "department": "拉萨阿里地区高级中学",
+    "department": "拉萨阿里高级中学",
     "position": "高中教师",
     "recruits": 2,
     "applicants": 56,
@@ -6586,7 +6583,7 @@ const POSITIONS_DATA = [
     "ratio": 22.5,
     "score_line": 160,
     "education": "本科及以上",
-    "major": "思想政治教育",
+    "major": "思政",
     "location": "日喀则",
     "note": ""
   },
@@ -6774,15 +6771,15 @@ const POSITIONS_DATA = [
     "id": "2025E027",
     "year": 2025,
     "type": "事业编（教育）",
-    "department": "林芝市",
-    "position": "小学教师",
-    "recruits": 3,
-    "applicants": 42,
-    "ratio": 14.0,
+    "department": "山南市",
+    "position": "中学语文教师",
+    "recruits": 2,
+    "applicants": 27,
+    "ratio": 13.5,
     "score_line": 160,
     "education": "本科及以上",
-    "major": "不限",
-    "location": "林芝",
+    "major": "汉语言文学",
+    "location": "山南",
     "note": ""
   },
   {
@@ -6790,13 +6787,13 @@ const POSITIONS_DATA = [
     "year": 2025,
     "type": "事业编（教育）",
     "department": "山南市",
-    "position": "中学语文教师",
+    "position": "中学数学教师",
     "recruits": 2,
     "applicants": 26,
     "ratio": 13.0,
     "score_line": 160,
     "education": "本科及以上",
-    "major": "汉语言文学",
+    "major": "数学",
     "location": "山南",
     "note": ""
   },
@@ -6805,13 +6802,13 @@ const POSITIONS_DATA = [
     "year": 2025,
     "type": "事业编（教育）",
     "department": "山南市",
-    "position": "中学数学教师",
-    "recruits": 2,
-    "applicants": 46,
-    "ratio": 23.0,
+    "position": "中学英语教师",
+    "recruits": 1,
+    "applicants": 31,
+    "ratio": 31.0,
     "score_line": 160,
     "education": "本科及以上",
-    "major": "数学",
+    "major": "英语",
     "location": "山南",
     "note": ""
   },
@@ -6819,56 +6816,11 @@ const POSITIONS_DATA = [
     "id": "2025E030",
     "year": 2025,
     "type": "事业编（教育）",
-    "department": "山南市",
-    "position": "中学英语教师",
-    "recruits": 1,
-    "applicants": 17,
-    "ratio": 17.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "英语",
-    "location": "山南",
-    "note": ""
-  },
-  {
-    "id": "2025E031",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "山南市",
-    "position": "中学教师",
-    "recruits": 2,
-    "applicants": 49,
-    "ratio": 24.5,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "山南",
-    "note": ""
-  },
-  {
-    "id": "2025E032",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "山南市",
-    "position": "小学教师",
-    "recruits": 4,
-    "applicants": 64,
-    "ratio": 16.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "山南",
-    "note": ""
-  },
-  {
-    "id": "2025E033",
-    "year": 2025,
-    "type": "事业编（教育）",
     "department": "那曲市",
     "position": "中学语文教师",
     "recruits": 2,
-    "applicants": 27,
-    "ratio": 13.5,
+    "applicants": 32,
+    "ratio": 16.0,
     "score_line": 160,
     "education": "本科及以上",
     "major": "汉语言文学",
@@ -6876,14 +6828,14 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025E034",
+    "id": "2025E031",
     "year": 2025,
     "type": "事业编（教育）",
     "department": "那曲市",
     "position": "中学数学教师",
     "recruits": 2,
-    "applicants": 32,
-    "ratio": 16.0,
+    "applicants": 49,
+    "ratio": 24.5,
     "score_line": 160,
     "education": "本科及以上",
     "major": "数学",
@@ -6891,104 +6843,89 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025E035",
+    "id": "2025E032",
     "year": 2025,
     "type": "事业编（教育）",
     "department": "那曲市",
-    "position": "中学英语教师",
-    "recruits": 1,
-    "applicants": 13,
-    "ratio": 13.0,
+    "position": "中学教师",
+    "recruits": 3,
+    "applicants": 49,
+    "ratio": 16.3,
     "score_line": 160,
     "education": "本科及以上",
-    "major": "英语",
+    "major": "不限",
     "location": "那曲",
+    "note": ""
+  },
+  {
+    "id": "2025E033",
+    "year": 2025,
+    "type": "事业编（教育）",
+    "department": "那曲市",
+    "position": "小学教师",
+    "recruits": 5,
+    "applicants": 72,
+    "ratio": 14.4,
+    "score_line": 160,
+    "education": "本科及以上",
+    "major": "不限",
+    "location": "那曲",
+    "note": ""
+  },
+  {
+    "id": "2025E034",
+    "year": 2025,
+    "type": "事业编（教育）",
+    "department": "阿里地区",
+    "position": "中学教师",
+    "recruits": 2,
+    "applicants": 32,
+    "ratio": 16.0,
+    "score_line": 160,
+    "education": "本科及以上",
+    "major": "不限",
+    "location": "阿里",
+    "note": ""
+  },
+  {
+    "id": "2025E035",
+    "year": 2025,
+    "type": "事业编（教育）",
+    "department": "阿里地区",
+    "position": "小学教师",
+    "recruits": 3,
+    "applicants": 43,
+    "ratio": 14.3,
+    "score_line": 160,
+    "education": "本科及以上",
+    "major": "不限",
+    "location": "阿里",
     "note": ""
   },
   {
     "id": "2025E036",
     "year": 2025,
     "type": "事业编（教育）",
-    "department": "那曲市",
-    "position": "中学教师",
-    "recruits": 3,
-    "applicants": 52,
-    "ratio": 17.3,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "那曲",
+    "department": "教材编译中心",
+    "position": "藏汉翻译",
+    "recruits": 4,
+    "applicants": 107,
+    "ratio": 26.8,
+    "score_line": 170,
+    "education": "硕士及以上",
+    "major": "少数民族语言文学",
+    "location": "拉萨",
     "note": ""
   },
   {
     "id": "2025E037",
     "year": 2025,
     "type": "事业编（教育）",
-    "department": "那曲市",
-    "position": "小学教师",
-    "recruits": 5,
-    "applicants": 78,
-    "ratio": 15.6,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "那曲",
-    "note": ""
-  },
-  {
-    "id": "2025E038",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "阿里地区",
-    "position": "中学教师",
-    "recruits": 2,
-    "applicants": 39,
-    "ratio": 19.5,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "阿里",
-    "note": ""
-  },
-  {
-    "id": "2025E039",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "阿里地区",
-    "position": "小学教师",
-    "recruits": 3,
-    "applicants": 60,
-    "ratio": 20.0,
-    "score_line": 160,
-    "education": "本科及以上",
-    "major": "不限",
-    "location": "阿里",
-    "note": ""
-  },
-  {
-    "id": "2025E040",
-    "year": 2025,
-    "type": "事业编（教育）",
-    "department": "自治区教材编译中心",
-    "position": "藏汉翻译",
-    "recruits": 4,
-    "applicants": 106,
-    "ratio": 26.5,
-    "score_line": 170,
-    "education": "硕士及以上",
-    "major": "中国少数民族语言文学",
-    "location": "拉萨",
-    "note": ""
-  },
-  {
-    "id": "2025E041",
-    "year": 2025,
-    "type": "事业编（教育）",
     "department": "西藏民族大学附属中学",
     "position": "中学教师",
     "recruits": 2,
-    "applicants": 30,
-    "ratio": 15.0,
+    "applicants": 33,
+    "ratio": 16.5,
     "score_line": 160,
     "education": "硕士及以上",
     "major": "不限",
@@ -7002,8 +6939,8 @@ const POSITIONS_DATA = [
     "department": "自治区人民医院",
     "position": "临床医生",
     "recruits": 3,
-    "applicants": 42,
-    "ratio": 14.0,
+    "applicants": 45,
+    "ratio": 15.0,
     "score_line": 110,
     "education": "硕士及以上",
     "major": "临床医学",
@@ -7017,8 +6954,8 @@ const POSITIONS_DATA = [
     "department": "自治区藏医院",
     "position": "藏医",
     "recruits": 2,
-    "applicants": 30,
-    "ratio": 15.0,
+    "applicants": 39,
+    "ratio": 19.5,
     "score_line": 110,
     "education": "硕士及以上",
     "major": "藏医学",
@@ -7029,26 +6966,11 @@ const POSITIONS_DATA = [
     "id": "2025SY003",
     "year": 2025,
     "type": "事业编（综合）",
-    "department": "自治区人民医院",
-    "position": "护理",
-    "recruits": 2,
-    "applicants": 25,
-    "ratio": 12.5,
-    "score_line": 110,
-    "education": "本科及以上",
-    "major": "护理学",
-    "location": "拉萨",
-    "note": ""
-  },
-  {
-    "id": "2025SY004",
-    "year": 2025,
-    "type": "事业编（综合）",
     "department": "自治区疾控中心",
     "position": "公共卫生",
     "recruits": 2,
-    "applicants": 27,
-    "ratio": 13.5,
+    "applicants": 30,
+    "ratio": 15.0,
     "score_line": 110,
     "education": "硕士及以上",
     "major": "预防医学",
@@ -7056,14 +6978,14 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025SY005",
+    "id": "2025SY004",
     "year": 2025,
     "type": "事业编（综合）",
     "department": "自治区公路局",
     "position": "工程技术",
     "recruits": 3,
-    "applicants": 51,
-    "ratio": 17.0,
+    "applicants": 36,
+    "ratio": 12.0,
     "score_line": 110,
     "education": "本科及以上",
     "major": "土木工程",
@@ -7071,14 +6993,14 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025SY006",
+    "id": "2025SY005",
     "year": 2025,
     "type": "事业编（综合）",
     "department": "自治区水利规划院",
     "position": "水利工程",
     "recruits": 2,
-    "applicants": 21,
-    "ratio": 10.5,
+    "applicants": 30,
+    "ratio": 15.0,
     "score_line": 110,
     "education": "硕士及以上",
     "major": "水利工程",
@@ -7086,14 +7008,14 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025SY007",
+    "id": "2025SY006",
     "year": 2025,
     "type": "事业编（综合）",
     "department": "自治区环境监测中心",
     "position": "环境监测",
     "recruits": 1,
-    "applicants": 26,
-    "ratio": 26.0,
+    "applicants": 18,
+    "ratio": 18.0,
     "score_line": 110,
     "education": "硕士及以上",
     "major": "环境科学",
@@ -7101,17 +7023,32 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025SY008",
+    "id": "2025SY007",
     "year": 2025,
     "type": "事业编（综合）",
     "department": "自治区林规院",
     "position": "林业调查",
     "recruits": 2,
-    "applicants": 39,
-    "ratio": 19.5,
+    "applicants": 25,
+    "ratio": 12.5,
     "score_line": 110,
     "education": "本科及以上",
     "major": "林学",
+    "location": "拉萨",
+    "note": ""
+  },
+  {
+    "id": "2025SY008",
+    "year": 2025,
+    "type": "事业编（综合）",
+    "department": "自治区农科院",
+    "position": "农业科研",
+    "recruits": 3,
+    "applicants": 39,
+    "ratio": 13.0,
+    "score_line": 110,
+    "education": "硕士及以上",
+    "major": "农学",
     "location": "拉萨",
     "note": ""
   },
@@ -7119,14 +7056,14 @@ const POSITIONS_DATA = [
     "id": "2025SY009",
     "year": 2025,
     "type": "事业编（综合）",
-    "department": "自治区农科院",
-    "position": "农业科研",
-    "recruits": 3,
-    "applicants": 36,
-    "ratio": 12.0,
+    "department": "自治区畜牧中心",
+    "position": "畜牧兽医",
+    "recruits": 2,
+    "applicants": 39,
+    "ratio": 19.5,
     "score_line": 110,
-    "education": "硕士及以上",
-    "major": "农学",
+    "education": "本科及以上",
+    "major": "畜牧兽医",
     "location": "拉萨",
     "note": ""
   },
@@ -7134,26 +7071,11 @@ const POSITIONS_DATA = [
     "id": "2025SY010",
     "year": 2025,
     "type": "事业编（综合）",
-    "department": "自治区畜牧中心",
-    "position": "畜牧兽医",
-    "recruits": 2,
-    "applicants": 36,
-    "ratio": 18.0,
-    "score_line": 110,
-    "education": "本科及以上",
-    "major": "畜牧兽医",
-    "location": "拉萨",
-    "note": ""
-  },
-  {
-    "id": "2025SY011",
-    "year": 2025,
-    "type": "事业编（综合）",
     "department": "自治区图书馆",
     "position": "图书管理",
     "recruits": 1,
-    "applicants": 14,
-    "ratio": 14.0,
+    "applicants": 9,
+    "ratio": 9.0,
     "score_line": 110,
     "education": "硕士及以上",
     "major": "图书馆学",
@@ -7161,14 +7083,14 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025SY012",
+    "id": "2025SY011",
     "year": 2025,
     "type": "事业编（综合）",
     "department": "自治区博物馆",
     "position": "文物考古",
     "recruits": 1,
-    "applicants": 12,
-    "ratio": 12.0,
+    "applicants": 26,
+    "ratio": 26.0,
     "score_line": 110,
     "education": "硕士及以上",
     "major": "考古学",
@@ -7176,14 +7098,14 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025SY013",
+    "id": "2025SY012",
     "year": 2025,
     "type": "事业编（综合）",
     "department": "自治区广播电视台",
     "position": "编辑记者",
     "recruits": 2,
-    "applicants": 33,
-    "ratio": 16.5,
+    "applicants": 39,
+    "ratio": 19.5,
     "score_line": 110,
     "education": "本科及以上",
     "major": "新闻传播",
@@ -7191,29 +7113,14 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025SY014",
-    "year": 2025,
-    "type": "事业编（综合）",
-    "department": "自治区体育局",
-    "position": "体育教练",
-    "recruits": 1,
-    "applicants": 19,
-    "ratio": 19.0,
-    "score_line": 110,
-    "education": "硕士及以上",
-    "major": "体育学",
-    "location": "拉萨",
-    "note": ""
-  },
-  {
-    "id": "2025SY015",
+    "id": "2025SY013",
     "year": 2025,
     "type": "事业编（综合）",
     "department": "拉萨市",
     "position": "市政工程",
     "recruits": 2,
-    "applicants": 27,
-    "ratio": 13.5,
+    "applicants": 24,
+    "ratio": 12.0,
     "score_line": 110,
     "education": "本科及以上",
     "major": "土木工程",
@@ -7221,14 +7128,14 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025SY016",
+    "id": "2025SY014",
     "year": 2025,
     "type": "事业编（综合）",
     "department": "日喀则市",
     "position": "农业推广",
     "recruits": 2,
-    "applicants": 31,
-    "ratio": 15.5,
+    "applicants": 28,
+    "ratio": 14.0,
     "score_line": 110,
     "education": "本科及以上",
     "major": "农学",
@@ -7236,14 +7143,14 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025SY017",
+    "id": "2025SY015",
     "year": 2025,
     "type": "事业编（综合）",
     "department": "昌都市",
     "position": "林业技术",
     "recruits": 1,
-    "applicants": 20,
-    "ratio": 20.0,
+    "applicants": 10,
+    "ratio": 10.0,
     "score_line": 110,
     "education": "本科及以上",
     "major": "林学",
@@ -7251,14 +7158,14 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025SY018",
+    "id": "2025SY016",
     "year": 2025,
     "type": "事业编（综合）",
     "department": "那曲市",
     "position": "畜牧兽医",
     "recruits": 2,
-    "applicants": 18,
-    "ratio": 9.0,
+    "applicants": 16,
+    "ratio": 8.0,
     "score_line": 110,
     "education": "本科及以上",
     "major": "畜牧兽医",
@@ -7266,14 +7173,14 @@ const POSITIONS_DATA = [
     "note": ""
   },
   {
-    "id": "2025SY019",
+    "id": "2025SY017",
     "year": 2025,
     "type": "事业编（综合）",
     "department": "阿里地区",
     "position": "生态保护",
     "recruits": 1,
-    "applicants": 13,
-    "ratio": 13.0,
+    "applicants": 17,
+    "ratio": 17.0,
     "score_line": 110,
     "education": "本科及以上",
     "major": "生态学",
@@ -7410,8 +7317,8 @@ const POSITIONS_DATA = [
     "id": "G2025010",
     "year": 2025,
     "type": "国考",
-    "department": "西藏出入境边防检查总站",
-    "position": "日喀则边境管理支队",
+    "department": "西藏边检总站日喀则支队",
+    "position": "边境管理一级警长及以下",
     "recruits": 2,
     "applicants": 49,
     "ratio": 24.5,
@@ -7424,8 +7331,8 @@ const POSITIONS_DATA = [
     "id": "G2025011",
     "year": 2025,
     "type": "国考",
-    "department": "西藏出入境边防检查总站",
-    "position": "阿里边境管理支队",
+    "department": "西藏边检总站阿里支队",
+    "position": "边境管理一级警长及以下",
     "recruits": 1,
     "applicants": 60,
     "ratio": 60.0,
@@ -7531,7 +7438,7 @@ const POSITIONS_DATA = [
     "education": "硕士及以上",
     "major": "数学/物理/化学/生物",
     "location": "拉萨",
-    "note": "面向33所重点师范院校"
+    "note": "33所重点师范院校"
   },
   {
     "id": "2026R002",
@@ -7562,48 +7469,6 @@ const POSITIONS_DATA = [
     "location": "全区"
   },
   {
-    "id": "2026R004",
-    "year": 2026,
-    "type": "人才引进",
-    "department": "西藏完全中学",
-    "position": "急需紧缺教师",
-    "recruits": 30,
-    "applicants": null,
-    "ratio": null,
-    "score_line": null,
-    "education": "硕士及以上",
-    "major": "师范类",
-    "location": "拉萨"
-  },
-  {
-    "id": "2026R005",
-    "year": 2026,
-    "type": "人才引进",
-    "department": "昌都市",
-    "position": "急需紧缺人才",
-    "recruits": 25,
-    "applicants": null,
-    "ratio": null,
-    "score_line": null,
-    "education": "硕士及以上",
-    "major": "多专业",
-    "location": "昌都"
-  },
-  {
-    "id": "2026R006",
-    "year": 2026,
-    "type": "人才引进",
-    "department": "自治区教材编译中心",
-    "position": "教材编译",
-    "recruits": 7,
-    "applicants": null,
-    "ratio": null,
-    "score_line": null,
-    "education": "硕士及以上",
-    "major": "藏汉翻译/计算机",
-    "location": "拉萨"
-  },
-  {
     "id": "2025L001",
     "year": 2025,
     "type": "遴选",
@@ -7616,79 +7481,227 @@ const POSITIONS_DATA = [
     "education": "本科及以上",
     "major": "",
     "location": "拉萨",
-    "note": "面向全区在编公务员"
-  },
-  {
-    "id": "2025YZ001",
-    "year": 2025,
-    "type": "事业编（综合）",
-    "department": "重庆市人社局",
-    "position": "就业援藏招聘",
-    "recruits": 70,
-    "applicants": null,
-    "ratio": null,
-    "score_line": null,
-    "education": "",
-    "major": "",
-    "location": "重庆"
-  },
-  {
-    "id": "2025YZ002",
-    "year": 2025,
-    "type": "事业编（综合）",
-    "department": "广东省人社厅",
-    "position": "专项招聘西藏籍少数民族",
-    "recruits": 50,
-    "applicants": null,
-    "ratio": null,
-    "score_line": null,
-    "education": "",
-    "major": "",
-    "location": "广东"
-  },
-  {
-    "id": "2025YZ003",
-    "year": 2025,
-    "type": "事业编（综合）",
-    "department": "上海市人社局",
-    "position": "就业援藏招聘",
-    "recruits": 13,
-    "applicants": null,
-    "ratio": null,
-    "score_line": null,
-    "education": "",
-    "major": "",
-    "location": "上海"
-  },
-  {
-    "id": "2025YZ004",
-    "year": 2025,
-    "type": "事业编（综合）",
-    "department": "北京市人社局",
-    "position": "就业援藏招聘",
-    "recruits": 25,
-    "applicants": null,
-    "ratio": null,
-    "score_line": null,
-    "education": "",
-    "major": "",
-    "location": "北京/安徽/湖南"
+    "note": "面向在编公务员"
   }
 ];
-
+const SCORE_DATA = [
+  {
+    "year": 2025,
+    "type": "教育事业单位",
+    "location": "教育厅直属学校",
+    "name": "笔试最低控制线",
+    "score": 170,
+    "note": "本科及以上岗位"
+  },
+  {
+    "year": 2025,
+    "type": "教育事业单位",
+    "location": "昌都市",
+    "name": "笔试最低控制线",
+    "score": 160,
+    "note": "本科及以上岗位"
+  },
+  {
+    "year": 2025,
+    "type": "教育事业单位",
+    "location": "昌都市",
+    "name": "笔试最低控制线",
+    "score": 135,
+    "note": "退役运动员/军人岗位"
+  },
+  {
+    "year": 2025,
+    "type": "事业单位",
+    "location": "区直事业单位",
+    "name": "笔试最低控制线",
+    "score": 110,
+    "note": "大专/本科及以上岗位"
+  },
+  {
+    "year": 2025,
+    "type": "公务员",
+    "location": "全区",
+    "name": "面试比例",
+    "score": 0,
+    "note": "按1:2确定面试人员(教育)/1:3(公务员)"
+  },
+  {
+    "year": 2024,
+    "type": "公务员",
+    "location": "全区",
+    "name": "招录总数",
+    "score": 303,
+    "note": "职位数286个"
+  },
+  {
+    "year": 2025,
+    "type": "公务员",
+    "location": "全区",
+    "name": "招录总数",
+    "score": 385,
+    "note": "职位数362个,录用377人"
+  },
+  {
+    "year": 2026,
+    "type": "公务员",
+    "location": "全区",
+    "name": "招录总数",
+    "score": 475,
+    "note": "职位数428个"
+  },
+  {
+    "year": 2021,
+    "type": "公务员",
+    "location": "全区",
+    "name": "招录总数",
+    "score": 286,
+    "note": "职位数205个"
+  },
+  {
+    "year": 2022,
+    "type": "公务员",
+    "location": "全区",
+    "name": "招录总数",
+    "score": 304,
+    "note": "职位数254个"
+  },
+  {
+    "year": 2023,
+    "type": "公务员",
+    "location": "全区",
+    "name": "招录总数",
+    "score": 297,
+    "note": "职位数275个"
+  },
+  {
+    "year": 2025,
+    "type": "事业编（综合）",
+    "location": "全区",
+    "name": "区直事业单位招聘",
+    "score": 621,
+    "note": ""
+  },
+  {
+    "year": 2025,
+    "type": "事业编（教育）",
+    "location": "全区",
+    "name": "教育事业单位招聘",
+    "score": 535,
+    "note": "471个职位"
+  }
+];
+const EXAM_MATERIALS = [
+  {
+    "cat": "考试大纲",
+    "title": "事业单位公开招聘分类考试大纲2025年版",
+    "url": "https://hrss.xizang.gov.cn"
+  },
+  {
+    "cat": "考试大纲",
+    "title": "公务员考试行测+申论大纲",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202501/t20250113_456938.html"
+  },
+  {
+    "cat": "备考攻略",
+    "title": "中学教师资格证笔试科目与备考",
+    "url": "https://www.neea.edu.cn"
+  },
+  {
+    "cat": "备考攻略",
+    "title": "教师编D类《综合应用能力》备考指南",
+    "url": "https://hrss.xizang.gov.cn"
+  },
+  {
+    "cat": "备考攻略",
+    "title": "行测各模块分值分布与复习策略",
+    "url": "https://hrss.xizang.gov.cn"
+  },
+  {
+    "cat": "真题资料",
+    "title": "近5年西藏公务员行测真题",
+    "url": "https://www.baidu.com/s?wd=西藏公务员行测真题"
+  },
+  {
+    "cat": "真题资料",
+    "title": "事业单位D类综合应用能力真题",
+    "url": "https://www.baidu.com/s?wd=事业单位D类综合应用能力真题"
+  },
+  {
+    "cat": "考试时间",
+    "title": "公考全年时间表（西藏）",
+    "url": "javascript:void(0)",
+    "note": "通常1-2月公务员报名,5-6月事业单位报名"
+  },
+  {
+    "cat": "考试时间",
+    "title": "2026西藏公务员时间线",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202512/t20251202_512168.html",
+    "note": "报名2025.12.7-12.12,笔试12.28"
+  },
+  {
+    "cat": "考试时间",
+    "title": "2025西藏事业单位时间线",
+    "url": "https://hrss.xizang.gov.cn/xwzx/tzgg/202505/t20250528_480992.html",
+    "note": "报名6.3-6.7,笔试6.21"
+  },
+  {
+    "cat": "官方渠道",
+    "title": "西藏自治区人社厅官网",
+    "url": "https://hrss.xizang.gov.cn"
+  },
+  {
+    "cat": "官方渠道",
+    "title": "全国人事考试服务平台",
+    "url": "http://zp.cpta.com.cn"
+  },
+  {
+    "cat": "官方渠道",
+    "title": "西藏自治区教育考试院",
+    "url": "https://www.xzzsks.com.cn"
+  }
+];
+const NAV_LINKS = [
+  {
+    "title": "岗位查询",
+    "icon": "fa-search",
+    "url": "search.html",
+    "desc": "多维度搜索西藏公务员/事业编岗位",
+    "color": "#1a6b8a"
+  },
+  {
+    "title": "分数线",
+    "icon": "fa-chart-line",
+    "url": "score.html",
+    "desc": "历年笔试分数线和进面数据",
+    "color": "#27ae60"
+  },
+  {
+    "title": "职位对比",
+    "icon": "fa-balance-scale",
+    "url": "compare.html",
+    "desc": "最多4个岗位并排对比",
+    "color": "#e67e22"
+  },
+  {
+    "title": "备考资料",
+    "icon": "fa-book",
+    "url": "material.html",
+    "desc": "考试大纲、真题、备考攻略",
+    "color": "#8e44ad"
+  }
+];
 const YEARLY_STATS = {
   "2026": {
-    "recruits": 669,
+    "recruits": 607,
     "applicants": 37758,
-    "count": 424
+    "count": 421
   },
   "2025": {
-    "recruits": 1896,
-    "applicants": 16735,
-    "count": 117
+    "recruits": 1725,
+    "applicants": 16505,
+    "count": 107
   }
 };
-
 const TYPE_STATS = {
   "公务员": {
     "recruits": 549,
@@ -7696,14 +7709,14 @@ const TYPE_STATS = {
     "count": 453
   },
   "事业编（教育）": {
-    "recruits": 95,
-    "applicants": 1890,
-    "count": 41
+    "recruits": 85,
+    "applicants": 1710,
+    "count": 37
   },
   "事业编（综合）": {
-    "recruits": 193,
-    "applicants": 520,
-    "count": 23
+    "recruits": 32,
+    "applicants": 470,
+    "count": 17
   },
   "国考": {
     "recruits": 13,
@@ -7716,9 +7729,9 @@ const TYPE_STATS = {
     "count": 5
   },
   "人才引进": {
-    "recruits": 205,
+    "recruits": 143,
     "applicants": 0,
-    "count": 6
+    "count": 3
   },
   "遴选": {
     "recruits": 210,
@@ -7726,7 +7739,6 @@ const TYPE_STATS = {
     "count": 1
   }
 };
-
 const NEWS_ITEMS = [
   {
     "title": "西藏自治区2026年高校毕业生公开考录公务员公告（475人）",

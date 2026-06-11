@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>备考资料 - 西藏公考通</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header"><div class="header-inner">
+<a href="index.html" class="logo"><i class="fas fa-mountain"></i> 西藏公考通 <span>备考资料</span></a>
+<nav class="nav">
+<a href="index.html"><i class="fas fa-home"></i> 首页</a>
+<a href="search.html"><i class="fas fa-search"></i> 岗位查询</a>
+<a href="score.html"><i class="fas fa-chart-line"></i> 分数线</a>
+<a href="material.html" class="active"><i class="fas fa-book"></i> 备考</a>
+</nav></div></header>
+
+<main class="container">
+  <div class="card">
+    <div class="card-header"><i class="fas fa-filter"></i> 筛选资料</div>
+    <div class="card-body">
+      <div class="search-form">
+        <div class="form-group"><label>分类</label><select id="matCat"><option value="">全部</option><option value="考试大纲">考试大纲</option><option value="备考攻略">备考攻略</option><option value="真题资料">真题资料</option><option value="考试时间">考试时间</option><option value="官方渠道">官方渠道</option></select></div>
+        <button onclick="filterMaterials()" class="btn btn-primary"><i class="fas fa-search"></i> 筛选</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><i class="fas fa-book"></i> 备考资料大全</div>
+    <div class="card-body"><div class="mat-grid" id="matGrid"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><i class="fas fa-clock"></i> 考试时间参考</div>
+    <div class="card-body">
+      <div class="mat-grid">
+        <div class="mat-card"><span class="mat-cat">全年安排</span><div style="font-size:13px;color:var(--text);"><strong>西藏公考全年时间参考</strong></div><div class="mat-meta">1-2月：公务员报名考试<br>5-6月：事业单位报名考试<br>8月：三支一扶招募<br>10-11月：国考报名<br>全年：人才引进（不定期）</div></div>
+        <div class="mat-card"><span class="mat-cat">学历要求</span><div style="font-size:13px;color:var(--text);"><strong>各考试类型学历要求</strong></div><div class="mat-meta">公务员：本科及以上为主<br>事业编（教育）：本科为主，硕博优先<br>三支一扶：专科及以上<br>人才引进：硕士及以上</div></div>
+        <div class="mat-card"><span class="mat-cat">考试科目</span><div style="font-size:13px;color:var(--text);"><strong>笔试科目一览</strong></div><div class="mat-meta">公务员：行测+申论(各150分)<br>事业编D类：职测+综合应用(各150分)<br>事业编A/B/C/E类：职测+综合应用<br>面试：结构化/试讲</div></div>
+        <div class="mat-card"><span class="mat-cat">备考建议</span><div style="font-size:13px;color:var(--text);"><strong>汉语言文学专业备考建议</strong></div><div class="mat-meta">1. 科目一综合素质：刷真题+练作文<br>2. 科目二教育知识：重点背诵，最易挂科<br>3. 科目三学科语文：本专业优势，主攻教案<br>4. 总备考时间建议：2-3个月，每天2-3h</div></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer"><p>数据来源：西藏自治区人社厅 等官方渠道 | 仅供参考</p></footer>
+<script src="js/data.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){ filterMaterials(); });
+
+function filterMaterials(){
+  const cat = document.getElementById('matCat').value;
+  const items = cat ? EXAM_MATERIALS.filter(m => m.cat === cat) : EXAM_MATERIALS;
+  const groups = {};
+  items.forEach(m => { if(!groups[m.cat]) groups[m.cat] = []; groups[m.cat].push(m); });
+  const grid = document.getElementById('matGrid');
+  grid.innerHTML = '';
+  Object.keys(groups).forEach(cat => {
+    groups[cat].forEach(m => {
+      grid.innerHTML += `<div class="mat-card fade-in"><span class="mat-cat">${m.cat}</span><a href="${m.url}" target="_blank"><i class="fas fa-external-link-alt"></i> ${m.title}</a><div class="mat-meta">${m.note||''}</div></div>`;
+    });
+  });
+}
+</script>
+</body>
+</html>

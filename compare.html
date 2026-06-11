@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>职位对比 - 西藏公考通</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header"><div class="header-inner">
+<a href="index.html" class="logo"><i class="fas fa-mountain"></i> 西藏公考通 <span>职位对比</span></a>
+<nav class="nav">
+<a href="index.html"><i class="fas fa-home"></i> 首页</a>
+<a href="search.html"><i class="fas fa-search"></i> 岗位查询</a>
+<a href="score.html"><i class="fas fa-chart-line"></i> 分数线</a>
+<a href="material.html"><i class="fas fa-book"></i> 备考</a>
+</nav></div></header>
+
+<main class="container">
+  <div class="card">
+    <div class="card-header"><i class="fas fa-balance-scale"></i> 职位对比 <span style="font-size:13px;color:var(--text-light);margin-left:8px;">从岗位查询页勾选后跳转至此</span></div>
+    <div class="card-body"><div id="compareContent"></div></div>
+  </div>
+  <div style="text-align:center;margin:20px 0;"><a href="search.html" class="btn btn-primary"><i class="fas fa-search"></i> 返回岗位查询</a></div>
+</main>
+
+<footer class="footer"><p>数据来源：西藏自治区人社厅 | 仅供参考</p></footer>
+<script src="js/data.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const ids = JSON.parse(localStorage.getItem('compare_ids') || '[]');
+  const data = POSITIONS_DATA.filter(p => ids.includes(p.id));
+  const container = document.getElementById('compareContent');
+
+  if(data.length === 0){
+    container.innerHTML = '<div style="text-align:center;padding:40px;color:var(--text-light);"><i class="fas fa-info-circle" style="font-size:32px;display:block;margin-bottom:12px;"></i>还没有选择对比的岗位<br>请先在<a href="search.html">岗位查询</a>页勾选后点击"对比"</div>';
+    return;
+  }
+
+  const fields = [
+    {label:'岗位名称', key: p => p.position},
+    {label:'招考部门', key: p => p.department},
+    {label:'年份', key: p => String(p.year)},
+    {label:'类型', key: p => p.type},
+    {label:'学历要求', key: p => p.education || '-'},
+    {label:'专业要求', key: p => p.major || '-'},
+    {label:'招录人数', key: p => String(p.recruits)},
+    {label:'报名人数', key: p => p.applicants ? p.applicants.toLocaleString() : '-'},
+    {label:'竞争比', key: p => p.ratio ? p.ratio.toFixed(1)+':1' : '-'},
+    {label:'分数线', key: p => p.score_line ? p.score_line+'分' : '-'},
+    {label:'工作地点', key: p => p.location || '-'},
+  ];
+
+  let html = '<div class="compare-grid">';
+  html += '<div class="compare-label" style="background:var(--primary);color:#fff;font-weight:700;">对比项目</div>';
+  data.forEach(p => { html += `<div class="compare-header">${p.position||'未知岗位'}</div>`; });
+
+  fields.forEach(f => {
+    html += `<div class="compare-label">${f.label}</div>`;
+    data.forEach(p => { html += `<div class="compare-value">${f.key(p)}</div>`; });
+  });
+  html += '</div>';
+
+  container.innerHTML = html;
+});
+</script>
+</body>
+</html>

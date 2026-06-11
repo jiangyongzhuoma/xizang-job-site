@@ -100,7 +100,10 @@
             </select>
           </div>
           <button onclick="doSearch()" class="btn btn-primary" style="grid-column: span 2;"><i class="fas fa-search"></i> 查询</button>
-          <button onclick="resetSearch()" class="btn btn-outline" style="grid-column: span 1;"><i class="fas fa-undo"></i> 重置</button>
+          <button onclick="resetSearch()" class="btn btn-outline"><i class="fas fa-undo"></i> 重置</button>
+          <button onclick="showMatch()" class="btn btn-accent"><i class="fas fa-star"></i> 智能推荐</button>
+          <button onclick="exportCSV()" class="btn btn-outline"><i class="fas fa-download"></i> 导出CSV</button>
+          <button onclick="goCompare()" class="btn btn-outline"><i class="fas fa-balance-scale"></i> 对比选中 (<span id="compareCount">0</span>)</button>
         </div>
       </div>
     </div>
@@ -116,6 +119,7 @@
           <table id="resultTable">
             <thead>
               <tr>
+                <th style="width:40px;">对比</th>
                 <th onclick="sortBy('year')">年份 <i class="fas fa-sort"></i></th>
                 <th onclick="sortBy('type')">类型 <i class="fas fa-sort"></i></th>
                 <th onclick="sortBy('department')">招考部门 <i class="fas fa-sort"></i></th>
@@ -136,6 +140,21 @@
           未找到匹配的岗位，请调整筛选条件
         </div>
         <div class="pagination" id="pagination"></div>
+      </div>
+    </div>
+
+    <!-- Match Recommendation -->
+    <div class="card" id="matchSection" style="display:none;">
+      <div class="card-header"><i class="fas fa-star"></i> 智能岗位推荐</div>
+      <div class="card-body">
+        <div class="search-form">
+          <div class="form-group"><label>您的专业</label><input type="text" id="mMajor" placeholder="如：汉语言文学" style="padding:8px;border:1px solid var(--border);border-radius:4px;font-size:13px;"></div>
+          <div class="form-group"><label>期望学历</label><select id="mEdu"><option value="">不限</option><option value="专科及以上">专科</option><option value="本科及以上">本科</option><option value="硕士及以上">硕士</option></select></div>
+          <div class="form-group"><label>期望地区</label><select id="mLoc"><option value="">不限</option><option value="拉萨">拉萨</option><option value="日喀则">日喀则</option><option value="昌都">昌都</option><option value="那曲">那曲</option></select></div>
+          <div class="form-group"><label>考试类型</label><select id="mType"><option value="">不限</option><option value="公务员">公务员</option><option value="事业编（教育）">教育类</option></select></div>
+          <button onclick="matchPositions()" class="btn btn-accent"><i class="fas fa-search"></i> 开始推荐</button>
+        </div>
+        <div id="matchResults" style="margin-top:12px;font-size:13px;color:var(--text-light);">输入您的信息后点击"开始推荐"</div>
       </div>
     </div>
 
