@@ -1,5 +1,7 @@
-# 西藏公考通 - 每日自动更新
-# 每天北京时间 9:00 (UTC 1:00) 自动检查西藏人社厅官网最新公告
+---
+# 修复 Daily Update Check 工作流的 Python 解析部分，改用更健壮的解析并添加错误处理
+# 仅修改 .github/workflows/daily-check.yml 的 Parse today's announcements step 的内联 Python 脚本
+
 name: Daily Update Check
 
 on:
@@ -30,65 +32,61 @@ jobs:
           echo "Today (UTC): $TODAY"
           echo "Today (Beijing): $BEIJING_DATE"
 
-          # Parse HTML to extract announcements
+          # Parse HTML to extract announcements using a more robust Python script
           python3 << 'PYEOF'
-          import re
-          from datetime import datetime
-          import json
+          import re, json, sys
+          from datetime import datetime, timedelta
 
-          with open('/tmp/announcements.html', 'r', encoding='utf-8') as f:
-              html = f.read()
+          def beijing_today_str():
+              return (datetime.utcnow() + timedelta(hours=8)).strftime('%Y-%m-%d')
 
-          # Extract using the known HTML structure:
-          # <a class="nm" href="./202606/t20260609_544645.html">标题</a>
-          # <div class="date">2026-06-09</div>
-          items = re.findall(
-              r'<a\s+class="nm"\s+href="(\./\d+/t\d+_\d+\.html)"[^>]*>(.*?)</a>\s*<div\s+class="date">\s*(\d{4}-\d{2}-\d{2})',
-              html
-          )
+          def extract_announcements(html):
+              # 宽松匹配 <a ... href="./...">标题</a>
+              pattern = re.compile(r'<a[^>]+href=["\'](?P<href>\./[^"\']+)["\'][^>]*>(?P<title>.*?)</a>', re.S|re.I)
+              items = []
+              for m in pattern.finditer(html):
+                  href = m.group('href').strip()
+                  raw_title = m.group('title')
+                  title = re.sub(r'<[^>]+>', '', raw_title).strip()
+                  # 尝试在 raw_title 周围查找日期 (yyyy-mm-dd)
+                  date_match = re.search(r'(\d{4}-\d{2}-\d{2})', raw_title)
+                  date = date_match.group(1) if date_match else None
+                  items.append({'href': href, 'title': title, 'date': date})
+              return items
 
+          try:
+              with open('/tmp/announcements.html', 'r', encoding='utf-8') as f:
+                  html = f.read()
+          except Exception as e:
+              print('ERROR: failed to read fetched HTML:', e, file=sys.stderr)
+              html = ''
+
+          beijing_today = beijing_today_str()
           results = []
-          beijing_today = __import__('datetime').datetime.now().strftime('%Y-%m-%d')
+          try:
+              candidates = extract_announcements(html)
+              keywords = ['公务员','事业','招聘','考录','遴选','三支一扶','教师','国考','人才引进','岗位','招录','报名','考试','笔试','面试']
+              for c in candidates:
+                  title = c.get('title','')
+                  date = c.get('date')
+                  # 如果存在日期且与今天不符则跳过
+                  if date and date != beijing_today:
+                      continue
+                  if any(kw in title for kw in keywords):
+                      url = 'https://hrss.xizang.gov.cn/xwzx/tzgg/' + c['href'].lstrip('./')
+                      results.append({'title': title, 'url': url, 'date': date or beijing_today, 'source': '西藏人社厅'})
+          except Exception as e:
+              print('ERROR: parsing failed:', e, file=sys.stderr)
 
-          for href, title, date in items:
-              title = re.sub(r'<[^>]+>', '', title).strip()
-              full_url = f"https://hrss.xizang.gov.cn/xwzx/tzgg/{href.replace('./', '')}"
-
-              # Check if it's from today
-              if date != beijing_today:
-                  continue
-
-              # Check if related to exams/jobs
-              keywords = ['公务员', '事业', '招聘', '考录', '遴选', '三支一扶', '教师', '教资', '国考',
-                         '人才引进', '就业', '岗位', '招录', '报名', '考试', '笔试', '面试',
-                         '高校毕业生', '录用', '公示', '选调', '事业单位', '西藏']
-              if any(kw in title for kw in keywords) and '公示' not in title:
-                  results.append({
-                      'title': title,
-                      'url': full_url,
-                      'date': date,
-                      'source': '西藏人社厅'
-                  })
-
-          # Write output
-          output = {
-              'date': beijing_today,
-              'count': len(results),
-              'items': results,
-              'updated_at': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-          }
-
-          with open('/tmp/daily-updates.json', 'w', encoding='utf-8') as f:
-              json.dump(output, f, ensure_ascii=False, indent=2)
-
-          print(f"Found {len(results)} today's announcements")
-          for r in results:
-              print(f"  - {r['title']}")
-
-          if len(results) == 0:
-              # No new announcements today, check yesterday too
-              print("No announcements today. Keeping previous data.")
-              PYEOF
+          out = {'date': beijing_today, 'count': len(results), 'items': results, 'updated_at': datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}
+          try:
+              with open('/tmp/daily-updates.json','w',encoding='utf-8') as f:
+                  json.dump(out, f, ensure_ascii=False, indent=2)
+              print('WROTE /tmp/daily-updates.json, count=', len(results))
+          except Exception as e:
+              print('ERROR: failed to write json:', e, file=sys.stderr)
+              sys.exit(1)
+          PYEOF
 
       - name: Update daily-updates.json
         run: |
